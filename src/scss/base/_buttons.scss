@@ -57,5 +57,9 @@
     &:hover {
       color: #fff;
     }
+    @media #{$media_lg} {
+      font-size: 16px;
+      padding: 20px 25px;
+    }
   }
 }

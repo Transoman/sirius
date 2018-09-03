@@ -5,6 +5,7 @@
 @import "pages/video";
 @import "pages/miniland-full";
 @import "pages/meeting";
+@import "pages/school";
 
 header.header {
   height: 90px;
@@ -337,10 +338,13 @@ footer.footer {
   }
 }
 
-
 @import 'blocks/header-club';
 @import 'blocks/nav-club';
 @import 'blocks/advantages-club';
+
 @import "pages/club-footer";
 @import "blocks/founders";
 @import "blocks/sirius-about";
+
+@import 'blocks/new-approach-club';
+@import "pages/club-footer";

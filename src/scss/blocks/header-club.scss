@@ -12,11 +12,30 @@
       font-size: 14px;
       font-weight: 500;
       box-shadow: 0 8px 32px rgba($orange, 0.3);
+      @media #{$media_md} {
+        display: none;
+      }
+    }
+    @media #{$media_md} {
+      padding: 5px 0;
+      justify-content: center;
     }
   }
-  &__title {
+  &__logo {
+    width: 125px;
+  }
+  &__content {
     padding: 115px 0 160px;
     background: url('../img/header-club-bg.jpg') no-repeat center / cover;
+    @media #{$media_lg} {
+      padding: 90px 0;
+    }
+     @media #{$media_md} {
+      padding: 25px 0 50px;
+     }
+  }
+  &__text {
+    max-width: 535px;
     h1 {
       margin-bottom: 25px;
       font-family: $font;
@@ -25,17 +44,65 @@
       line-height: 0.82;
       text-transform: uppercase;
       color: #fff;
+      @media #{$media_lg} {
+        font-size: 70px;
+      }
+      @media #{$media_md} {
+        font-size: 24px;
+        br {
+          display: none;
+        }
+      }
     }
     p {
       margin-bottom: 75px;
       font-family: $font;
       font-size: 28px;
       color: $tropival-blue;
+      @media #{$media_xl} {
+        margin-bottom: 35px;
+        font-size: 22px;
+        br {
+          display: none;
+        }
+      }
+      @media #{$media_md} {
+        margin: 0;
+        font-size: 16px;
+        font-weight: 500;
+      }
+    }
+    @media #{$media_lg} {
+      max-width: 325px;
+    }
+    @media #{$media_md} {
+      max-width: none;
+    }
+    .btn--orange {
+      @media #{$media_md} {
+        display: block;
+        max-width: 280px !important;
+        width: 100%;
+        margin: 0 auto;
+        font-size: 14px;
+        padding-right: 15px;
+        padding-left: 15px;
+      }
     }
   }
   &__img {
     position: absolute;
     top: -20px;
     right: 0;
+    @media #{$media_xl} {
+      width: 570px;
+    }
+    @media #{$media_lg} {
+      width: 440px;
+    }
+    @media #{$media_md} {
+      position: static;
+      width: auto;
+    }
   }
 }

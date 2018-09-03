@@ -42,3 +42,29 @@ $(window).on('load', function(){
         asNavFor: '.meeting-content__organization-slider'
     });
 });
+
+$( document ).ready(function() {
+  $('.slide__head').click(function() {
+    $('.slide__head').removeClass('active');
+    $(this).addClass('active');
+    $(this).next().slideToggle();
+    $('.slide__toggle').not($(this).next()).slideUp();
+  });
+
+  var map;
+    function initMap() {
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: 55.7304527, lng: 37.6177843},
+        zoom: 16,
+        zoomControl: true,
+        zoomControlOptions: {
+          position: google.maps.ControlPosition.RIGHT_CENTER
+        },
+        mapTypeControl: false,
+        streetViewControl: false,
+        fullscreenControl: false
+      });
+    }
+    initMap();
+
+});

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="290" height="75" viewBox="0 0 290 75">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1e2123;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="white_bg_copy_3" data-name="white_bg copy 3" class="cls-1" d="M5,0H285L271.135,52.538C268.247,63.485,256.713,72,245.257,72H44.743c-11.456,0-22.99-8.514-25.878-19.461Z"/>
+</svg>
