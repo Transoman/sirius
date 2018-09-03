@@ -1,0 +1,49 @@
+body.meeting .meeting-content .section-form h2 {
+	margin-bottom: 20px;
+}
+body.meeting .meeting-content .section-form p {
+	font-size: 20px;
+	color: #5d6770;
+	margin-bottom: 110px;
+}
+
+.section-form {
+	background: #f1f9ff;
+	padding: 120px 0;
+}
+
+.form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+
+	label{
+		font-size: 18px;
+		color: #5d6770;
+		margin-left: 10px;
+	}
+
+	input, select{
+		height: 60px;
+		border: 1px solid #ced7de;
+		border-radius: 8px;
+		padding: 0 10px;
+		color: #303c47;
+		font-size: 18px;
+		&:hover {
+			outline: none;
+		}
+		&:focus{
+			outline: none;
+		}
+	}
+	
+	&__line{
+		display: flex;
+		flex-direction: column;
+		width: 30%;
+		max-width: 320px;
+		margin-bottom: 70px;
+	}
+
+}
