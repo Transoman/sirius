@@ -1,0 +1,111 @@
+.sirius-about{
+   background-color: #f3faff; 
+  padding-bottom: 100px;
+
+}
+.sirius-about__wrap {
+padding-top: 90px;
+  padding-bottom: 60px;
+  h2 {
+    margin-right: 65px;
+    color: #141516 !important;
+    font-size: 60px;
+    font-weight: 400;
+    margin-bottom: 0 !important;
+
+  }
+}
+.sirius-about__wrap{
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+}
+
+.sirius-about__card  {
+  padding: 37px 38px 0 37px;
+  background-color: #fff;
+  min-height: 300px;
+  box-shadow: 0 5px 10px rgba(#dbdbdb, .4);
+
+   p{
+    color: #5d6770 !important;
+    font-size: 22px !important;
+    font-weight: 400 !important;
+     span{
+    color: #303c47 !important;
+    font-size: 22px !important;
+    font-weight: 500 !important;
+   
+  }
+  }
+
+}
+
+.sirius-about__card{
+  position: relative;
+  border-radius: 25px;  
+  &::before{
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 3px;
+    background-color: #4086f4;
+    top: 0; 
+    left: 25px;
+
+
+  }
+}
+
+
+@media only screen and (max-width : 1200px){
+  body.meeting .meeting-content h2{
+    font-size: 36px !important;   
+
+  }
+
+  .sirius-about__wrap{
+    padding-top: 70px;  
+    width: 100%;  
+    height: auto; 
+  }
+.sirius-about__card  {
+ 
+
+   p{
+   
+    font-size: 14px !important;
+    line-height: 1.5 !important;  
+   
+     span{
+   
+    font-size: 14px !important;
+   line-height: 1.5 !important; 
+   
+  }
+  }
+
+}
+
+.sirius-about__card{
+  min-height: 200px !important;  
+}
+
+}
+
+
+@media only screen and (max-width : 992px){
+  .sirius-about__card{
+    padding: 15px 15px 0 15px; 
+    min-height: 185px !important; 
+  }
+}
+
+@media only screen and (max-width : 767px){
+ .sirius-about__card{
+    margin-bottom: 20px;  
+    padding: 20px; 
+    min-height: 120px !important; 
+  }  
+}
+
