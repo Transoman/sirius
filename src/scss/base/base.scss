@@ -1,0 +1,52 @@
+@import "../../libs/bootstrap/scss/bootstrap-grid";
+@import "../../libs/bootstrap/scss/mixins";
+@import "../../libs/bootstrap/scss/bootstrap-reboot";
+@import "../../libs/slick/slick";
+@import "../../libs/fancybox/jquery.fancybox";
+@import "../../libs/swiper/swiper.min";
+@import "../../libs/animation/animate.min";
+@import "../../libs/fontawesome/css/all";
+@import "../mixins/font-face";
+
+//example
+//https://gist.github.com/jonathantneal/d0460e5c2d5d7f9bc5e6
+@include font-face(Roboto, "../webfonts/roboto-regular");
+
+@import "variables";
+
+html, body {
+  font-family: $font;
+}
+
+html {
+  @media #{$media_md} {
+    position: relative;
+    min-height: 100%;
+  }
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: lighter;
+  color: $base_font_color;
+  font-family: $font;
+  line-height: 74px;
+  text-transform: uppercase;
+  & > strong {
+    font-weight: 700;
+  }
+}
+
+p {
+  font-family: $font_secondary;
+}
+
+  a:focus {
+    outline: none;
+  }
+
+
+@import "preloader";
+@import "base-text";
+@import "buttons";
+@import "modal";

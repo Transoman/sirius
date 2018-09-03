@@ -1,0 +1,165 @@
+.miniland-full {
+  &__header {
+    font-family: $font;
+    background: #1167f0 url('../img/thanks_fill-repeat.png') repeat center;
+    height: 390px;
+    h1 {
+      padding-top: 130px;
+      color: #fff;
+      font-size: 48px;
+      font-weight: 300;
+      line-height: 62px;
+      letter-spacing: -0.4px;
+      text-transform: uppercase;
+      strong {
+        font-weight: 700;
+      }
+    }
+    @media #{$media_xl} {
+      h1 {
+        font-size: 40px;
+        line-height: 55px;
+      }
+    }
+    @media #{$media_lg} {
+      height: 300px;
+      h1 {
+        padding-top: 80px;
+        font-size: 35px;
+        line-height: 45px;
+      }
+    }
+    @media #{$media_md} {
+      height: 250px;
+      h1 {
+        text-align: center;
+      }
+    }
+    @media #{$media_sm} {
+      height: 165px;
+      h1 {
+        padding-top: 62px;
+        font-size: 19px;
+        line-height: 25px;
+      }
+    }
+  }
+  &__author {
+    padding-top: 42px;
+    position: relative;
+    img {
+      margin-left: 39px;
+    }
+    p {
+      font-family: $font_secondary;
+      position: absolute;
+      bottom: 11px;
+      left: -85px;
+      margin-bottom: 0;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 24px;
+      color: #ffffff;
+    }
+    @media #{$media_lg} {
+      img {
+        margin-left: 0;
+        width: 200px;
+      }
+      p {
+        bottom: 5px;
+        left: -100px;
+        font-size: 15px;
+        line-height: 19px;
+      }
+    }
+  }
+  &__content {
+    background-color: #eff8ff;
+    padding: 45px 0 110px;
+    .row > div {
+      margin: 50px 0;
+    }
+    @media #{$media_xl} {
+      padding-bottom: 50px;
+    }
+    @media #{$media_md} {
+      padding-bottom: 90px;
+    }
+  }
+  &__item {
+    position: relative;
+    text-align: center;
+    height: 100%;
+    min-height: 350px;
+    padding: 90px 30px 80px;
+    background-color: #fff;
+    box-shadow: 3px 4px 30px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    h5 {
+      color: #303c47;
+      font-family: $font_secondary;
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 30px;
+      strong {
+        font-weight: 700;
+      }
+    }
+    i {
+      display: inline-block;
+      width: 80px;
+      height: 80px;
+      margin-bottom: 30px;
+      position: absolute;
+      left: calc(50% - 40px);
+      top: -20px;
+    }
+    p {
+      color: #5d6770;
+      font-family: $font_secondary;
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 20px;
+      margin-bottom: 0;
+    }
+    a {
+      @extend .btn;
+      @extend .btn-orange;
+      position: absolute;
+      bottom: 30px;
+      max-width: 168px;
+      font-size: 14px;
+      line-height: 42px;
+      border-radius: 4px;
+      left: calc(50% - 84px);
+      box-shadow: 5px 9px 30px rgba(255, 100, 31, 0.5);
+      &:active {
+        bottom: 29px;
+        left: calc(50% - 84px + 1px);
+      }
+    }
+    &:hover {
+      box-shadow: 3px 4px 30px rgba(0, 0, 0, 0.2);
+    }
+    @media #{$media_xl} {
+      h5 {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 26px;
+      }
+    }
+  }
+  @for $i from 1 through 6 {
+    div:nth-child(#{$i}) > &__item i {
+      background: #0e64ed url('../img/miniland-full_ico-#{$i}.svg') no-repeat center center;
+      background-size: 60%;
+    }
+  }
+}
+.miniland-full+footer.footer {
+  @media #{$media_md} {
+    border-top: 1px solid #9da7b0;
+    background: white;
+  }
+}

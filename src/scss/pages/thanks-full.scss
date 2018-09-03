@@ -1,0 +1,65 @@
+section.thanks-full {
+  font-family: $font;
+  background: #1167f0 url('../img/thanks_fill-repeat.png') repeat center;
+  height: calc(100vh - 186px);
+  text-align: center;
+  div {
+    position: relative;
+    top: calc(50% - 53px);
+  }
+  h2 {
+    padding-left: 8px;
+    font-size: 72px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 0;
+    line-height: 76px;
+    color: white;
+  }
+  p {
+    padding-left: 8px;
+    font-size: 20px;
+    font-family: $font-secondary;
+    color: #acd9ff;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    margin-bottom: 0;
+  }
+  @media #{$media_lg} {
+    h2 {
+      font-size: 50px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+  @media #{$media_md} {
+    div {
+      top: calc(50% - 75px);
+    }
+    h2 {
+      line-height: 60px;
+    }
+    p {
+      line-height: 30px;
+    }
+  }
+  @media #{$media_sm} {
+    height: calc(100vh - 131px);
+    div {
+      top: calc(50% - 91px);
+    }
+    h2 {
+      font-size: 42px;
+      line-height: 48px;
+    }
+    p {
+      margin-top: 20px;
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+}
+section.thanks-full+footer {
+
+}

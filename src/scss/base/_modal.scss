@@ -1,0 +1,27 @@
+.modal {
+  position: relative;
+  overflow: hidden;
+  max-width: 320px;
+  height: auto;
+  background-color: #fff;
+  z-index: 1;
+  padding: 25px;
+  border-radius: 6px;
+  .close {
+    position: absolute;
+    top: 8px;
+    right: 6px;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    i {
+      color: #141516;
+      font-size: 20px;
+    }
+  }
+  p {
+    font-size: 14px;
+    text-align: justify;
+  }
+}
