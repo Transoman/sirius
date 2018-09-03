@@ -243,109 +243,58 @@
         <a href="#" class="btn">Подать заявку на вступление в клуб</a>
     </section>
     <section class="meeting-content__result">
+
+    <section class="section-form">
         <div class="container">
-            <h2><strong>По итогам</strong> ВЫ ПОЛУЧИТЕ</h2>
-            <div class="row">
-                <div class="col col-sm-4">
-                    <img src="img/result-1.png" alt=""><br>
-                    Новые знакомства <br>с профессионалами рынка
+            
+            <h2><strong>Подайте заявку</strong> для вступления <br>в закрытый криптоклуб <strong>SiriusCrypto</strong></h2>
+            <p>Ведущий аналитик SC свяжется с вами в течение 2 дней</p>
+
+            <form action="sendmail.php" class="form" method="post">
+
+                <input type="hidden" name="subject" value="Узнать подробнее!">
+
+                <div class="form__line">
+                    <label for="name">Ваше имя</label>
+                    <input id="name" type="text" name="name" required>
                 </div>
-                <div class="col col-sm-4">
-                    <img src="img/result-2.png" alt=""><br>
-                    Доступ к сообществу
-                    профессионалов
+
+                <div class="form__line">
+                    <label for="tel">Телефон</label>
+                    <input id="tel" type="tel" name="phone" required pattern="\+7\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}">
                 </div>
-                <div class="col col-sm-4">
-                    <img src="img/result-3.png" alt=""><br>
-                    Профессиональную аналитику
-                    рынка от экспертов
+
+                <div class="form__line">
+                    <label for="name">Email</label>
+                    <input id="email" type="tel" name="mail" required>
                 </div>
-                <div class="col col-sm-4">
-                    <img src="img/result-4.png" alt=""><br>
-                    1 новый актив для <br>
-                    инвестиций в криптовалюте <br>
-                    с доходностью от х2 ​
+
+                <div class="form__line">
+                    <label for="trader">Ваша роль</label>
+                    <select id="trader">
+                      <option>Трейдер</option>
+                      <option>Трейдер 2</option>
+                      <option>Трейдер 3</option>
+                    </select>
                 </div>
-                <div class="col col-sm-4">
-                    <img src="img/result-5.png" alt=""><br>
-                    Инсайды от представителей
-                    государственного сектора,<br>
-                    фондов и бирж
+
+                <div class="form__line">
+                    <label for="trader">Ваша роль</label>
+                    <select id="trader">
+                      <option>$1 000 - $5 000</option>
+                      <option>$5 000 - $10 000</option>
+                      <option>$10 000 - $15 000</option>
+                    </select>
                 </div>
-                <div class="col col-sm-4"><br>
-                    <a href="#" class="btn">Записаться на встречу</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="meeting-content__organization">
-        <div class="container">
-            <h2><strong>Организаторы</strong><br>
-                встречи</h2>
-            <div class="meeting-content__organization-counter">
-                <div>01</div>
-                <div>02</div>
-            </div>
-            <div class="meeting-content__organization-slider">
-                <div class="meeting-content__organization-slide">
-                    <img src="img/slides/organization-1.png" alt="">
-                    <div>
-                        <h4>Вадим Киреев</h4>
-                        <p>Главный аналитик фонда Sirius Crypto Club</p>
-                        <ul>
-                            <li>Создатель сообщества Sirius Crypto.
-                                (2000 активных участников)</li>
-                            <li>Криптотрейдер, эксперт.
-                                Лидер мнения Decenter Trades..</li>
-                            <li>Заработал 1 млн долл чистыми
-                                с депозитом 20 тыс долл за 6 мес.</li>
-                            <li>Управлял криптоактивами в 7 млн долл.</li>
-                            <li>Adviser Cryptobank 123x.io</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="meeting-content__organization-slide">
-                    <img src="img/slides/organization-1.png" alt="">
-                    <div>
-                        <h4>Вадим Киреев</h4>
-                        <p>Главный аналитик фонда Sirius Crypto Club</p>
-                        <ul>
-                            <li>Создатель сообщества Sirius Crypto.
-                                (2000 активных участников)</li>
-                            <li>Криптотрейдер, эксперт.
-                                Лидер мнения Decenter Trades..</li>
-                            <li>Заработал 1 млн долл чистыми
-                                с депозитом 20 тыс долл за 6 мес.</li>
-                            <li>Управлял криптоактивами в 7 млн долл.</li>
-                            <li>Adviser Cryptobank 123x.io</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="meeting-content__participation">
-        <div class="container">
-            <div class="row">
-                <div class="col col-sm-5">
-                    <img src="img/participation_bg.png" alt="">
-                </div>
-                <div class="col col-sm-7">
-                    <h2><strong>Участие</strong> в мероприятии -<br>
-                        <strong>платное <span>3000 ₽</span></strong></h2>
-                    <blockquote>
-                        Мы хотим видеть на встрече людей, которые реально
-                        заинтересованы в информации и новых знакомствах.
-                        Нам не нужны "халявщики".
-                    </blockquote>
-                </div>
-                <div class="col">
-                    <a href="#" class="btn">Записаться на встречу</a>
-                </div>
-            </div>
+
+                <div><button type="submit" class="btn btn--orange" name="submit" value="отправить">Отправить</button></div>
+
+            </form>
         </div>
     </section>
 </main>
+
+
 <footer class="footer">
     <div class="container">
         <div class="row">
@@ -359,11 +308,12 @@
                 </div>
             </div>
             <div class="d-none d-md-block col-md-4 footer__meet">
-                <a href="#">Записаться на встречу</a>
+                <a href="#"  class="btn btn—orange">Записаться на встречу</a>
             </div>
         </div>
     </div>
 </footer>
+
 <script src="js/scripts.min.js"></script>
 </body>
 </html>
