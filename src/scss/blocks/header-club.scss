@@ -30,6 +30,9 @@
     @media #{$media_lg} {
       padding: 90px 0;
     }
+     @media #{$media_md} {
+      padding: 25px 0 50px;
+     }
   }
   &__text {
     max-width: 535px;
@@ -44,6 +47,12 @@
       @media #{$media_lg} {
         font-size: 70px;
       }
+      @media #{$media_md} {
+        font-size: 24px;
+        br {
+          display: none;
+        }
+      }
     }
     p {
       margin-bottom: 75px;
@@ -57,9 +66,28 @@
           display: none;
         }
       }
+      @media #{$media_md} {
+        margin: 0;
+        font-size: 16px;
+        font-weight: 500;
+      }
     }
     @media #{$media_lg} {
       max-width: 325px;
+    }
+    @media #{$media_md} {
+      max-width: none;
+    }
+    .btn--orange {
+      @media #{$media_md} {
+        display: block;
+        max-width: 280px !important;
+        width: 100%;
+        margin: 0 auto;
+        font-size: 14px;
+        padding-right: 15px;
+        padding-left: 15px;
+      }
     }
   }
   &__img {
@@ -71,6 +99,10 @@
     }
     @media #{$media_lg} {
       width: 440px;
+    }
+    @media #{$media_md} {
+      position: static;
+      width: auto;
     }
   }
 }

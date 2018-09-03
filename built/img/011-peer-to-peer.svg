@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 496 496" style="enable-background:new 0 0 496 496;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#A3D2FF;}
+	.st1{fill:#073277;}
+</style>
+<circle class="st0" cx="248" cy="240" r="96"/>
+<path class="st1" d="M272,188.4V168h-16v16h-16v-16h-16v16h-16v112h16v16h16v-16h16v16h16v-20.4c9.5-5.6,16-15.8,16-27.6
+	c0-9.5-4.2-18.1-10.9-24c6.7-5.9,10.9-14.5,10.9-24C288,204.2,281.5,194,272,188.4z M256,280h-32v-32h32c8.8,0,16,7.2,16,16
+	C272,272.8,264.8,280,256,280z M256,232h-32v-32h32c8.8,0,16,7.2,16,16S264.8,232,256,232z"/>
+<rect x="224" y="448" class="st1" width="48" height="16"/>
+<path class="st1" d="M492.2,112L408,38.4V80h-24V40c0-22.1-17.9-40-40-40H152c-22.1,0-40,17.9-40,40v296H88v-41.6L3.8,368L88,441.6
+	V400h24v56c0,22.1,17.9,40,40,40h192c22.1,0,40-17.9,40-40V144h24v41.6L492.2,112z M152,16h192c13.2,0,24,10.8,24,24v8H128v-8
+	C128,26.8,138.8,16,152,16z M344,480H152c-13.2,0-24-10.8-24-24v-24h240v24C368,469.2,357.2,480,344,480z M320,128v16h48v272H128
+	v-16h80v-16H72v22.4L28.2,368L72,329.6V352h104v-16h-48V64h240v16h-80v16h136V73.6l43.8,38.4L424,150.4V128H320z"/>
+<rect x="224" y="384" class="st1" width="16" height="16"/>
+<rect x="256" y="384" class="st1" width="16" height="16"/>
+<rect x="256" y="80" class="st1" width="16" height="16"/>
+<rect x="224" y="80" class="st1" width="16" height="16"/>
+<rect x="304" y="232" class="st1" width="16" height="16"/>
+<rect x="176" y="232" class="st1" width="16" height="16"/>
+</svg>
