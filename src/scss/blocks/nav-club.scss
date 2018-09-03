@@ -10,13 +10,16 @@
     }
   }
   a {
-      font-size: 14px;
-      font-weight: 500;
-      color: $shuttle-gray;
-      transition: all 0.25s ease;
-      &:hover {
-        text-decoration: none;
-        color: $orange;
-      }
+    font-size: 14px;
+    font-weight: 500;
+    color: $shuttle-gray;
+    transition: all 0.25s ease;
+    &:hover {
+      text-decoration: none;
+      color: $orange;
     }
+  }
+  @media #{$media_lg} {
+    display: none;
+  }
 }

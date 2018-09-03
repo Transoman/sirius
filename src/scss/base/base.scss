@@ -46,9 +46,21 @@ p {
   font-family: $font_secondary;
 }
 
-  a:focus {
-    outline: none;
+a {
+  transition: all 0.25s ease;
+  &:hover {
+    text-decoration: none;
   }
+}
+
+a:focus {
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 
 @import "preloader";

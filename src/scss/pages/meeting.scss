@@ -115,6 +115,9 @@ body.meeting {
       box-shadow: 5px 9px 30px rgba(255, 100, 31, 0.5);
       width: 100%;
       max-width: 300px;
+      @media #{$media_xl} {
+        font-size: 16px;
+      }
     }
     &__we-know {
       background: white url('../img/wait_bg.png')no-repeat right 283px top 108px;
