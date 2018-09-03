@@ -236,9 +236,9 @@
             </div>
         </div>
     </section>
-    <section class="meeting-content__previous">
+    <section class="group-previous">
         <div class="container"><h2>Предыдущие  <strong>встречи</strong></h2></div>
-        <div class="meeting-content__previous-slider">
+        <div class="group-slider meeting-content__previous-slider">
                 <div><img src="img/slides/slide-1.png" ></div>
                 <div><img src="img/slides/slide-1.png" ></div>
                 <div><img src="img/slides/slide-2.png" ></div>
@@ -246,8 +246,8 @@
         </div>
         <a href="#" class="btn">Подать заявку на вступление в клуб</a>
     </section>
-    <section class="meeting-content__result">
 
+    
     <section class="section-form">
         <div class="container">
             
@@ -258,66 +258,134 @@
 
                 <input type="hidden" name="subject" value="Узнать подробнее!">
 
-                <div class="form__line">
-                    <label for="name">Ваше имя</label>
-                    <input id="name" type="text" name="name" required>
+
+                <div class="form__container">
+
+                    <div class="form__line">
+                        <label for="name">Ваше имя</label>
+                        <input id="name" type="text" name="name" required>
+                    </div>
+
+                    <div class="form__line">
+                        <label for="tel">Телефон</label>
+                        <input id="tel" type="tel" name="phone" required pattern="\+7\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}">
+                    </div>
+
+                    <div class="form__line">
+                        <label for="name">Email</label>
+                        <input id="email" type="tel" name="mail" required>
+                    </div>
+
+                    <div class="form__line select-wrapper">
+                        <label for="trader">Ваша роль</label>
+                        <select id="trader">
+                          <option>Трейдер</option>
+                          <option>Трейдер 2</option>
+                          <option>Трейдер 3</option>
+                        </select>
+                    </div>
+
+                    <div class="form__line select-wrapper">
+                        <label for="trader">Ваша роль</label>
+                        <select id="trader">
+                          <option>$1 000 - $5 000</option>
+                          <option>$5 000 - $10 000</option>
+                          <option>$10 000 - $15 000</option>
+                        </select>
+                    </div>
                 </div>
 
-                <div class="form__line">
-                    <label for="tel">Телефон</label>
-                    <input id="tel" type="tel" name="phone" required pattern="\+7\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}">
-                </div>
-
-                <div class="form__line">
-                    <label for="name">Email</label>
-                    <input id="email" type="tel" name="mail" required>
-                </div>
-
-                <div class="form__line">
-                    <label for="trader">Ваша роль</label>
-                    <select id="trader">
-                      <option>Трейдер</option>
-                      <option>Трейдер 2</option>
-                      <option>Трейдер 3</option>
-                    </select>
-                </div>
-
-                <div class="form__line">
-                    <label for="trader">Ваша роль</label>
-                    <select id="trader">
-                      <option>$1 000 - $5 000</option>
-                      <option>$5 000 - $10 000</option>
-                      <option>$10 000 - $15 000</option>
-                    </select>
-                </div>
-
-                <div><button type="submit" class="btn btn--orange" name="submit" value="отправить">Отправить</button></div>
+                <div class="form__btn"><button type="submit" class="btn btn--orange form__btn">Подать заявку на вступление в клуб</button></div>
 
             </form>
         </div>
     </section>
+
+    <div class="contacts">
+      <div class="bg-gradient"> </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="contacts__item">
+              <div class="container">
+                <div class="row">
+                  <div class="contacts__title">
+                    <h4> КОНТАКТЫ </h4>
+                  </div>
+                  <div class="contacts__info">
+                    <div class="row">
+                      <div class="col-4">
+                        <img src="../../img/calendar.svg" alt="">
+                        <h6>Дата обучения</h6>
+                        <p>17 июля 2018</p>
+                      </div>
+                      <div class="col-1">
+                        <img src="../../img/clock.svg" alt="">
+                        <h6>Время</h6>
+                        <p>19:30</p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <img src="../../img/placeholder-filled-point.svg" alt="">
+                        <h6> Место обучения </h6>
+                        <p> Москва, Житная 10 DeeCrypto store & club </p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <img src="../../img/call-answer.svg" alt="">
+                        <h6> Телефон </h6>
+                        <p> +7 (987) 654 32 10 </p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-3">
+                        <img src="../../img/telegram_g.svg" alt="">
+                        <h6><a href="#">Telegram </a></h6>
+                      </div>
+                      <div class="col-3">
+                        <img src="../../img/whatsapp-logo.svg" alt="">
+                        <h6><a href="#">Whatsapp </a></h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="map"> </div>
+    </div>
 </main>
 
 
 <footer class="footer">
-    <div class="container">
+      <div class="container">
         <div class="row">
-            <div class="d-none d-md-block col-md-4 footer__logo">
-                <a href="/"><img src="img/club-logo.png" alt="SiriusCryptoClub"></a>
+          <div class="d-none d-md-block col-md-4 footer__logo">
+            <a href="/">
+              <img src="img/header-logo.png" alt="SiriusCryptoClub">
+              <strong>SiriusCrypto</strong>
+              <br> закрытое сообщество
+              <br> криптоинвесторов</a>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="footer__policy">
+              <p>
+                <a href="#">Политика конфиденциальности</a>
+                <br> SiriusCrypto 2018 ©</p>
             </div>
-            <div class="col-12 col-md-4">
-                <div class="footer__policy">
-                    <p><a href="#">Политика конфиденциальности</a><br>
-                        SiriusCrypto 2018 ©</p>
-                </div>
-            </div>
-            <div class="d-none d-md-block col-md-4 footer__meet">
-                <a href="#"  class="btn btn—orange">Записаться на встречу</a>
-            </div>
+          </div>
+          <div class="d-none d-md-block col-md-4 footer__meet">
+            <a href="#">Записаться на встречу</a>
+          </div>
         </div>
-    </div>
-</footer>
+      </div>
+    </footer>
 
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9pumcofHA1XO-13Dz9bM_Y9kVfJfTKdc"></script>
 <script src="js/scripts.min.js"></script>
 </body>
 </html>
