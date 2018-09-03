@@ -1,6 +1,11 @@
-@import "../../libs/bootstrap/scss/bootstrap-grid";
-@import "../../libs/bootstrap/scss/mixins";
-@import "../../libs/bootstrap/scss/bootstrap-reboot";
+// @import "../../libs/bootstrap/scss/bootstrap-grid";
+// @import "../../libs/bootstrap/scss/mixins";
+// @import "../../libs/bootstrap/scss/bootstrap-reboot";
+
+@import '../libs/bootstrap/scss/bootstrap-reboot';
+@import '../libs/bootstrap/scss/bootstrap-grid';
+@import '../libs/bootstrap/scss/utilities/_sizing';
+
 @import "../../libs/slick/slick";
 @import "../../libs/fancybox/jquery.fancybox";
 @import "../../libs/swiper/swiper.min";

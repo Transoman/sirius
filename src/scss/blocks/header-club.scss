@@ -1,6 +1,41 @@
 .header-club {
+  .container {
+    position: relative;
+  }
   &__wrap {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 13px 0;
+    .btn--orange {
+      padding: 12px 20px;
+      font-size: 14px;
+      font-weight: 500;
+      box-shadow: 0 8px 32px rgba($orange, 0.3);
+    }
+  }
+  &__title {
+    padding: 115px 0 160px;
+    background: url('../img/header-club-bg.jpg') no-repeat center / cover;
+    h1 {
+      margin-bottom: 25px;
+      font-family: $font;
+      font-size: 116px;
+      font-weight: 500;
+      line-height: 0.82;
+      text-transform: uppercase;
+      color: #fff;
+    }
+    p {
+      margin-bottom: 75px;
+      font-family: $font;
+      font-size: 28px;
+      color: $tropival-blue;
+    }
+  }
+  &__img {
+    position: absolute;
+    top: -20px;
+    right: 0;
   }
 }
