@@ -1,7 +1,7 @@
 // @import "../../libs/bootstrap/scss/bootstrap-grid";
 // @import "../../libs/bootstrap/scss/mixins";
 // @import "../../libs/bootstrap/scss/bootstrap-reboot";
-
+@import "variables";
 @import '../libs/bootstrap/scss/bootstrap-reboot';
 @import '../libs/bootstrap/scss/bootstrap-grid';
 @import '../libs/bootstrap/scss/utilities/_sizing';
@@ -17,8 +17,7 @@
 //https://gist.github.com/jonathantneal/d0460e5c2d5d7f9bc5e6
 @include font-face('Roboto', "../webfonts/roboto-regular");
 @include font-face('RobotoCondensed', "../webfonts/RobotoCondensed-Regular");
-
-@import "variables";
+@include font-face('RobotoCondensed', "../webfonts/RobotoCondensedLight/RobotoCondensedLight");
 
 html, body {
   font-family: $font;
@@ -37,10 +36,10 @@ body {
 
 h1 {
   font-size: 60px;
-  font-weight: lighter;
+  font-weight: 300;
   color: $base_font_color;
   font-family: $font;
-  line-height: 74px;
+  line-height: 1.23;
   text-transform: uppercase;
   & > strong {
     font-weight: 700;

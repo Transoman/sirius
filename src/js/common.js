@@ -12,6 +12,10 @@ $(window).on('load', function(){
         $('.mlp-25__social-body').toggleClass('d-none');
     });
 
+    $('a[href="#"]').click(function(event) {
+        event.preventDefault();
+    });
+
     $('.modal').popup({transition: 'all 0.3s'});
 
     $('.meeting-content__previous-slider').slick({

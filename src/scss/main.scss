@@ -9,6 +9,7 @@
 @import "blocks/forecasts";
 @import "blocks/reviews";
 @import "base/modal-form";
+
 header.header {
   height: 90px;
   background: white;
@@ -70,7 +71,7 @@ main.content {
     padding-bottom: 434px;
     background: url('../img/content-book-bg_shadow.png') no-repeat top -2px left calc(50% + 354px);
     h1 {
-      margin: 147px 0 86px -22px;
+      margin: 147px 0 86px;
       letter-spacing: -1px;
       line-height: 72px;
       strong {
@@ -144,7 +145,6 @@ main.content {
       }
     }
     .content__button-block {
-      margin-left: -21px;
       @media #{$media_xl} {
         margin-left: 0;
       }
@@ -179,7 +179,8 @@ main.content {
       }
     }
     blockquote {
-      margin: 117px 0 0 178px;
+      margin: 117px 0 0 0;
+      padding-left: 200px;
       color: #5d6770;
       font-size: 16px;
       font-family: $font_secondary;
@@ -189,7 +190,8 @@ main.content {
         position: absolute;
         width: 148px;
         height: 1px;
-        right: calc(100% + 50px);
+        // right: calc(100% + 50px);
+        left: 0;
         top: calc(50% - 6px);
         background-color: #9da7b0;
       }
@@ -197,15 +199,16 @@ main.content {
         color: #ff591f;
       }
       @media #{$media_lg} {
-        margin: 50px 0 0 100px;
+        margin: 50px 0 0 0;
+        padding-left: 90px;
         &::before {
-          right: calc(100% + 30px);
           width: 70px;
         }
       }
       @media #{$media_md} {
         font-size: 14px;
         margin: 25px 0 0 0;
+        padding-left: 0;
         &::before {
           content: none;
 
@@ -253,7 +256,7 @@ main.content {
   }
 
 }
-footer.footer {
+.footer {
   .footer__logo {
     a {
       font-family: $font_secondary;
@@ -265,7 +268,6 @@ footer.footer {
       width: 210px;
       margin: 13px 0;
       position: relative;
-      left: -20px;
       letter-spacing: 0.18px;
       line-height: 13.5px;
       strong {

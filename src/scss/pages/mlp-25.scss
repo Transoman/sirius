@@ -4,7 +4,7 @@ body.mlp-25 {
   margin: 0 auto;
   .mlp-25 {
     &__logo {
-      height: 45px;
+      padding: 5px 0 0;
       text-align: center;
     }
     &__header {
@@ -78,7 +78,8 @@ body.mlp-25 {
           font-weight: 700;
         }
       }
-      & > p {
+      p {
+        margin-bottom: 15px;
         text-align: center;
         font-family: $font_secondary;
         color: #5d6770;
