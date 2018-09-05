@@ -8,6 +8,7 @@
     margin-bottom: 0;
     color: #141516;
     font-family: $font;
+    font-weight: 300;
     text-transform: uppercase;
     strong {
       font-weight: bold;
@@ -68,6 +69,9 @@
     margin: 0 auto;
     iframe {
       width: 100%;
+      @media #{$media_sm} {
+        height: auto;
+      }
     }
     @media #{$media_xl} {
       max-width: calc(720px - 13%);

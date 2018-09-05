@@ -51,6 +51,7 @@ gulp.task('js', function() {
 		'src/libs/jquery-popup-overlay/jquery.popupoverlay.js',
 		'src/libs/jquery-mask-plugin/dist/jquery.mask.min.js',
 		'src/libs/jquery-validation/dist/jquery.validate.min.js',
+    'src/libs/fancybox/jquery.fancybox.js',
 		'src/js/common.js' // Always at the end
 		])
 	.pipe(plumber())

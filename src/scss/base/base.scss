@@ -10,14 +10,21 @@
 @import "../../libs/fancybox/jquery.fancybox";
 @import "../../libs/swiper/swiper.min";
 @import "../../libs/animation/animate.min";
-@import "../../libs/fontawesome/css/all";
+// @import "../../libs/fontawesome/css/all";
+@import '../libs/fontAwesome/web-fonts-with-css/scss/variables';
+@import '../libs/fontAwesome/web-fonts-with-css/scss/mixins';
+@import '../libs/fontAwesome/web-fonts-with-css/scss/core';
+@import '../libs/fontAwesome/web-fonts-with-css/scss/solid';
+@import '../libs/fontAwesome/web-fonts-with-css/scss/icons';
+@import '../libs/fontAwesome/web-fonts-with-css/scss/brands';
 @import "../mixins/font-face";
 
 //example
 //https://gist.github.com/jonathantneal/d0460e5c2d5d7f9bc5e6
 @include font-face('Roboto', "../webfonts/roboto-regular");
 @include font-face('RobotoCondensed', "../webfonts/RobotoCondensed-Regular");
-@include font-face('RobotoCondensed', "../webfonts/RobotoCondensedLight/RobotoCondensedLight");
+@include font-face('RobotoCondensed', "../webfonts/RobotoCondensedLight/RobotoCondensedLight", 300);
+@include font-face('RobotoCondensed', "../webfonts/RobotoCondensedBold/RobotoCondensedBold", 700);
 
 html, body {
   font-family: $font;

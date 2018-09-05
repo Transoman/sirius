@@ -29,7 +29,7 @@ $(window).on('load', function(){
             url: "sendmail.php",
             data: data,
             success: function() {
-                $(".modal").popup("hide");
+                $(".modal-form").popup("hide");
                 $("#thanks").popup("show");
                 setTimeout(function() {
                     $(formName).trigger('reset');
