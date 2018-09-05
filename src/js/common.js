@@ -1,5 +1,5 @@
 $(window).on('load', function(){
-    $('.modal').popup({
+    $('.modal-form').popup({
         transition: 'all 0.3s',
         onclose: function() {
             $(this).find('label.error').remove();

@@ -26,7 +26,7 @@
                     store & club
                 </div>
             </div>
-            <a href="#" class="btn">Записаться на встречу</a>
+            <a href="#" class="btn callback_open">Записаться на встречу</a>
         </div>
     </div>
     <div class="meeting-header__title">
@@ -36,7 +36,7 @@
                     криптомиллионеров</strong></h1>
             <p><span>Sirius Crypto Club</span> - децентрализованное сообщество <br> успешных криптоинвесторов по всему
                 миру</p>
-            <a href="#" class="btn">Я приду!</a>
+            <a href="#" class="btn callback_open">Я приду!</a>
         </div>
     </div>
 </header>
@@ -100,7 +100,7 @@
                     участников клуба в USD
                 </div>
                 <div class="col offset-sm-1 col-sm-5">
-                    <a href="#" class="btn">Записаться на встречу</a>
+                    <a href="#" class="btn callback_open">Записаться на встречу</a>
                 </div>
             </div>
         </div>
@@ -144,15 +144,32 @@
             </div>
         </div>
     </section>
-    <section class="meeting-content__previous">
-        <div class="container"><h2>Предыдущие  <strong>встречи</strong></h2></div>
-        <div class="meeting-content__previous-slider">
-                <div><img src="img/slides/slide-1.png" ></div>
-                <div><img src="img/slides/slide-1.png" ></div>
-                <div><img src="img/slides/slide-2.png" ></div>
-                <div><img src="img/slides/slide-3.png" ></div>
+    <section class="group-previous">
+        <div class="container">
+            <h2>Предыдущие
+                <strong>потоки</strong>
+            </h2>
         </div>
-        <a href="#" class="btn">Подать заявку на вступление в клуб</a>
+
+        <div class="group-slider meeting-content__previous-slider">
+            <div>
+                <img src="img/slides/slide-1.png">
+            </div>
+            <div>
+                <img src="img/slides/slide-1.png">
+            </div>
+            <div>
+                <img src="img/slides/slide-2.png">
+            </div>
+            <div>
+                <img src="img/slides/slide-3.png">
+            </div>
+        </div>
+        <div class="container">
+            <div class="btn__school btn__school_meeting">
+                <a class="callback_open" href="#">Подать заявку на вступление в клуб</a>
+            </div>
+        </div>
     </section>
     <section class="meeting-content__result">
         <div class="container">
@@ -185,7 +202,7 @@
                     фондов и бирж
                 </div>
                 <div class="col col-sm-4"><br>
-                    <a href="#" class="btn">Записаться на встречу</a>
+                    <a href="#" class="btn callback_open">Записаться на встречу</a>
                 </div>
             </div>
         </div>
@@ -252,7 +269,7 @@
                     </blockquote>
                 </div>
                 <div class="col">
-                    <a href="#" class="btn">Записаться на встречу</a>
+                    <a href="#" class="btn callback_open">Записаться на встречу</a>
                 </div>
             </div>
         </div>
@@ -275,7 +292,7 @@
                 <input type="text" placeholder="Ваше имя" class="form-screen__form_text">
                 <input type="tel" placeholder="Ваш телефон" class="form-screen__form_text">
                 <div class="btn__school btn__school_form">
-                  <a href="#">Я приду!</a>
+                  <a href="#" >Я приду!</a>
                 </div>
                 <label>
                   <input type="checkbox"> Нажимая на кнопку "Я приду", я даю согласие на обработку персональных данных
@@ -359,13 +376,13 @@
                 </div>
             </div>
             <div class="d-none d-md-block col-md-4 footer__meet">
-                <a href="#">Записаться на встречу</a>
+                <a href="#" class="callback_open">Записаться на встречу</a>
             </div>
         </div>
     </div>
 </footer>
 
-<div id="callback" class="modal">
+<div id="callback" class="modal-form">
     <button class="callback_close modal__close">
         Close
         <span class="modal__close-line"></span>
@@ -386,12 +403,11 @@
         </div>
 
         <div class="col-sm-12 form-group">
-            <input type="submit" class="btn form__btn" name="submit" value="Заказать звонок">
+            <input type="submit" class="modal-form__btn" name="submit" value="Заказать звонок">
         </div>
 
     </form>
 </div>
-
 <div id="thanks" class="modal">
     <button class="thanks_close modal__close">
         Close
