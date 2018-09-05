@@ -1,6 +1,6 @@
 $(window).on('load', function(){
     //----------- validator&mask
-    $('input[type="tel"]').mask('+0 (000) 000-00-00');
+    $('input[type="tel"]').mask('+7 (000) 000-00-00');
 
     jQuery.validator.addMethod("phoneno", function(phone_number, element) {
         return this.optional(element) || phone_number.match(/\+[0-9]{1}\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}/);
@@ -23,6 +23,26 @@ $(window).on('load', function(){
             ajaxSend('.callback-form', t);
         }
     });
+
+    $('.meeting-form').validate({
+        rules: {
+            phone: {
+                required: true,
+                phoneno: true
+            },
+            name: 'required',
+        },
+        messages: {
+            name: "Введите Ваше имя",
+            phone: "Введите Ваш телефон",
+            term: "Нужно Ваше согласие",
+        },
+        submitHandler: function(form) {
+            var t = $('.meeting-form').serialize();
+            ajaxSend('.meeting-form', t);
+        }
+    });
+
     function ajaxSend(formName, data) {
         jQuery.ajax({
             type: "POST",
@@ -128,5 +148,15 @@ $( document ).ready(function() {
       });
     }
     initMap();
+
+    $('.meeting-form input[name="time"]').val($('.drop-btn').text());
+
+    $('.drop-content a').click(function(e) {
+        e.preventDefault();
+        var time = $(this).text();
+        var btn = $('.drop-btn');
+        btn.text(time);
+        $('.meeting-form input[name="time"]').val(time);
+    });
 
 });

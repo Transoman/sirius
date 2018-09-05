@@ -64,11 +64,28 @@
   }
 }
 
+.btn-play {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  padding-left: 5px;
+  border-radius: 50%;
+  background-color: #0064f1;
+  font-size: 24px;
+  color: #fff;
+  box-shadow: 0 10px 50px rgba(#0064ea, 0.6);
+  &:hover {
+    background-color: lighten(#0064f1, 5%);
+    color: #fff;
+  }
+}
 
-.indicator-btn{
+.indicator-btn {
   font-size: 18px;
   font-weight: 500;
-  
   padding: 10px 35px;
   display: inline-block;
   text-align: center;
@@ -76,7 +93,7 @@
   line-height: 60px;
   border-radius: 8px;
   position: relative;
-   background: $color_orange;
+  background: $color_orange;
   color: white;
   box-shadow: 5px 9px 30px rgba(255,100,31,.5);
   &:hover,

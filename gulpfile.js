@@ -87,7 +87,8 @@ gulp.task('copy-webfonts', function () {
 });*/
 
 gulp.task('watch', ['styles', 'js', 'browser-sync'], function() {
-	gulp.watch('src/'+syntax+'/**/*.'+syntax+'', ['styles']);
+  // gulp.watch('src/'+syntax+'/**/*.'+syntax+'', ['styles']);
+	gulp.watch('src/'+syntax+'/**/*.{sass,scss}', ['styles']);
 	gulp.watch(['src/js/**/*.js'], ['js']);
 	gulp.watch('built/*.html', browsersync.reload)
 });
