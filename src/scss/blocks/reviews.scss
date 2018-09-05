@@ -1,5 +1,5 @@
 .reviews {
-  padding-top: 100px;
+  padding-top: 120px;
   padding-bottom: 50px;
   h2 {
     font-family: "Roboto Condensed",sans-serif;
@@ -24,14 +24,15 @@
     font-weight: 400;
     max-width: 330px;
     font-family: "Roboto",sans-serif;
-    margin-bottom: 30px;
+    margin-bottom: 49px;
+    line-height: 24px!important;
   }
   h4 {
     font-size: 24px;
     color: #303c47;
     font-family: "Roboto",sans-serif;
     font-weight: 500;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   h5 {
     font-size: 24px;
@@ -45,7 +46,7 @@
   }
   img {
     max-width: 200px;
-    margin-top: 130px;
+    margin-top: 105px;
     margin-bottom: 30px;
   }
   a {
@@ -113,7 +114,7 @@
   max-width: 450px;
   margin: 0 auto;
   img {
-    width: 100%;
+    width: 120%;
     max-width: 450px;
     margin: 0;
   }
