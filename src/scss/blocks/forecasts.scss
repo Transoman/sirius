@@ -1,6 +1,6 @@
 .forecasts {
-  padding-top: 120px;
-  padding-bottom: 140px;
+  padding-top: 55px;
+  padding-bottom: 110px;
   h2 {
     font-family: $font;
     strong {
@@ -9,9 +9,14 @@
     }
     text-transform: uppercase;
     font-size: 60px;
-    margin-bottom: 75px;
+    margin-bottom: 25px;
     color: #000;
     font-weight: 100;
+  }
+  h3{
+    font-size: 24px;
+    color: #5d6770;
+    margin-bottom: 40px;
   }
   position: relative;
 }
@@ -21,6 +26,7 @@
     max-width: 320px;
     margin: 25px auto;
   }
+
   .slick-arrow {
     width: 60px;
     height: 60px;
@@ -56,7 +62,7 @@
 
   }
   .slick-next {
-    right: -100%;
+    right: -115%;
     &::before {
       content: '\f054';
     }
@@ -65,9 +71,11 @@
     }
   }
 }
-
-.forecasts img, .forecasts__slider img, table {
-  width: 70%;
+.forecasts img{
+  width: 82%;
+}
+.forecasts__slider img, table {
+  width: 82%;
   @media #{$media_lg} {
     width: 100%;
   }
@@ -83,7 +91,7 @@
 }
 
 .forecasts__video {
-  margin-top: 30%;
+  margin-top: 37%;
   position: relative;
   @media #{$media_lg} {
     margin-top: 0;

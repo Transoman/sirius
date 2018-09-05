@@ -1,19 +1,30 @@
+
+
 .founders--bg {
   background: #0e64ed;
   padding-top: 100px;
-  padding-bottom: 50px;
+  padding-bottom: 45px;
+  p{
+    margin-bottom: 20px;
+  }
+  a{
+    margin-bottom: 5px;
+  }
 }
+
 
 .founders h3{
   color: #fff;
   margin-bottom: 0;
+  font-size: 24px;
 }
 .founders h2{
   text-align: center;
   font-size: 60px;
+  margin-bottom: 70px;
 }
 .founders img{
-  margin-bottom: 40px;
+  margin-bottom: 55px;
 }
 body.meeting .founders--bg h2 {
   color: #fff;
