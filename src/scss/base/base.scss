@@ -15,7 +15,8 @@
 
 //example
 //https://gist.github.com/jonathantneal/d0460e5c2d5d7f9bc5e6
-@include font-face(Roboto, "../webfonts/roboto-regular");
+@include font-face('Roboto', "../webfonts/roboto-regular");
+@include font-face('RobotoCondensed', "../webfonts/RobotoCondensed-Regular");
 
 @import "variables";
 

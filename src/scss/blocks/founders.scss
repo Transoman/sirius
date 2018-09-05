@@ -3,13 +3,14 @@
   padding-top: 100px;
   padding-bottom: 50px;
 }
+
 .founders h3{
   color: #fff;
   margin-bottom: 0;
 }
 .founders h2{
-  text-align: center
-  
+  text-align: center;
+  font-size: 60px;
 }
 .founders img{
   margin-bottom: 40px;
@@ -62,9 +63,7 @@ body.meeting .founders--bg p {
     
   }
   .founders h2{
-    margin-bottom: 0 !important; 
-    font-size: 36px !important
-  
+    margin-bottom: 0 !important;
   }
 }
 
@@ -72,5 +71,12 @@ body.meeting .founders--bg p {
   .founders h2{
     line-height: 1.3 !important;
     font-size: 28px !important;
+  }
+}
+@media only screen and (max-width : 425px){
+  .founders {
+    h2{
+      font-size: 24px;
+    }
   }
 }

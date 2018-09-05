@@ -6,7 +6,9 @@
 @import "pages/miniland-full";
 @import "pages/meeting";
 @import "pages/school";
-
+@import "blocks/forecasts";
+@import "blocks/reviews";
+@import "base/modal-form";
 header.header {
   height: 90px;
   background: white;
@@ -345,6 +347,7 @@ footer.footer {
 @import "pages/club-footer";
 @import "blocks/founders";
 @import "blocks/sirius-about";
+@import "blocks/indicator";
 
 @import 'blocks/new-approach-club';
 @import "pages/club-footer";

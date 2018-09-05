@@ -60,7 +60,7 @@ padding-top: 90px;
 
 @media only screen and (max-width : 1200px){
   body.meeting .meeting-content h2{
-    font-size: 36px !important;   
+
 
   }
 
@@ -109,3 +109,8 @@ padding-top: 90px;
   }  
 }
 
+@media only screen and (max-width : 425px){
+  .sirius-about{
+    padding-bottom: 50px;
+  }
+}

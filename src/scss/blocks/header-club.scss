@@ -47,7 +47,7 @@
       @media #{$media_lg} {
         font-size: 70px;
       }
-      @media #{$media_md} {
+      @media #{$media_sm} {
         font-size: 24px;
         br {
           display: none;
@@ -66,7 +66,7 @@
           display: none;
         }
       }
-      @media #{$media_md} {
+      @media #{$media_sm} {
         margin: 0;
         font-size: 16px;
         font-weight: 500;

@@ -63,3 +63,31 @@
     }
   }
 }
+
+
+.indicator-btn{
+  font-size: 18px;
+  font-weight: 500;
+  
+  padding: 10px 35px;
+  display: inline-block;
+  text-align: center;
+  font-family: $font_secondary;
+  line-height: 60px;
+  border-radius: 8px;
+  position: relative;
+   background: $color_orange;
+  color: white;
+  box-shadow: 5px 9px 30px rgba(255,100,31,.5);
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    box-shadow: 10px 17px 50px rgba(255, 100, 31, 0.6);
+    color: #fff;
+  }
+  &:active {
+    right: -1px;
+    bottom: -1px;
+  }
+  
+}

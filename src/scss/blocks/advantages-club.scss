@@ -1,92 +1,176 @@
-.advantages {
-  .col-md-6 {
-    &:nth-child(odd) {
-      .advantages__item {
-        padding-left: 125px;
-        img {
-          left: 25px;
-        }
-      }
-    }
-    @media #{$media_xl} {
-      &:nth-child(odd) {
-       .advantages__item {
-         padding-left: 100px;
-         img {
-          left: 0;
-         }
-        }
-      }
-    }
-    @media #{$media_lg} {
-      &:nth-child(odd) {
-       .advantages__item {
-         padding-left: 80px;
-       }
-     }
-    }
-    @media #{$media_md} {
-      &:nth-child(odd) {
-       .advantages__item {
-         padding-left: 0;
-       }
-     }
+.advantages-club {
+  padding-top: 120px;
+  padding-bottom: 50px;
+  h3, p {
+    padding-left: 100px;
+  }
+  h2 {
+    text-transform: uppercase;
+    font-family: $font;
+    font-size: 60px;
+    font-weight: 100;
+    margin-bottom: 100px;
+    color: #000;
+    strong {
+      font-weight: 700;
     }
   }
-  &__item {
-    position: relative;
-    padding-left: 100px;
-    margin-bottom: 60px;
-    img {
-      position: absolute;
-      left: 0;
-      top: 0;
-      @media #{$media_lg} {
-        width: 60px;
-        height: 60px;
-      }
+  h3 {
+    font-size: 28px;
+    font-family: $font_secondary;
+    font-weight: 500;
+    color: #303c47;
+    margin-bottom: 45px;
+  }
+  p {
+    color: #5d6770;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    strong {
+      margin-top: 10px;
+      display: inline-block;
+      color: #6598ea;
     }
-    h3 {
-      margin-bottom: 25px;
-      font-size: 28px;
-      font-weight: 500;
-      color: $secondary_font_color;
-      @media #{$media_xl} {
-        font-size: 26px;
-      }
-      @media #{$media_lg} {
-        margin-bottom: 20px;
-        font-size: 24px;
-      }
-      @media #{$media_md} {
-        margin-bottom: 10px;
-        font-size: 18px;
-      }
-    }
-    p {
-      margin-bottom: 0;
-      font-size: 20px;
-      color: $shuttle-gray;
-      @media #{$media_lg} {
-        font-size: 16px !important;
-        br {
-          display: none;
-        }
-      }
-      @media #{$media_md} {
-        font-size: 16px;
-      }
-    }
-    .btn {
-      margin-top: 40px;
-    }
-    @media #{$media_lg} {
-      padding-left: 80px;
-    }
-    @media #{$media_md} {
-      padding-top: 80px;
-      padding-left: 0;
-      margin-bottom: 25px;
-    }
+  }
+  img {
+    width: 70px;
+    position: absolute;
   }
 }
+
+.advantages-club__item {
+  margin-bottom: 75px;
+}
+
+.btn__school__advantages-club {
+  width: 390px;
+  margin: 0 auto;
+  height: 75px;
+  a {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .btn__school__advantages-club {
+    width: 350px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .advantages-club {
+    padding-top: 50px;
+    h3, p {
+      padding-left: 0;
+    }
+    h2 {
+      font-size: 24px;
+      margin-bottom: 40px;
+    }
+    img {
+      top: 0;
+    }
+  }
+  .advantages-club__item {
+    margin-top: 70px;
+    margin-bottom: 30px;
+  }
+  .btn__school__advantages-club {
+    width: 270px;
+  }
+}
+
+
+//.advantages {
+//  .col-md-6 {
+//    &:nth-child(odd) {
+//      .advantages__item {
+//        padding-left: 125px;
+//        img {
+//          left: 25px;
+//        }
+//      }
+//    }
+//    @media #{$media_xl} {
+//      &:nth-child(odd) {
+//       .advantages__item {
+//         padding-left: 100px;
+//         img {
+//          left: 0;
+//         }
+//        }
+//      }
+//    }
+//    @media #{$media_lg} {
+//      &:nth-child(odd) {
+//       .advantages__item {
+//         padding-left: 80px;
+//       }
+//     }
+//    }
+//    @media #{$media_md} {
+//      &:nth-child(odd) {
+//       .advantages__item {
+//         padding-left: 0;
+//       }
+//     }
+//    }
+//  }
+//  &__item {
+//    position: relative;
+//    padding-left: 100px;
+//    margin-bottom: 60px;
+//    img {
+//      position: absolute;
+//      left: 0;
+//      top: 0;
+//      @media #{$media_lg} {
+//        width: 60px;
+//        height: 60px;
+//      }
+//    }
+//    h3 {
+//      margin-bottom: 25px;
+//      font-size: 28px;
+//      font-weight: 500;
+//      color: $secondary_font_color;
+//      @media #{$media_xl} {
+//        font-size: 26px;
+//      }
+//      @media #{$media_lg} {
+//        margin-bottom: 20px;
+//        font-size: 24px;
+//      }
+//      @media #{$media_md} {
+//        margin-bottom: 10px;
+//        font-size: 18px;
+//      }
+//    }
+//    p {
+//      margin-bottom: 0;
+//      font-size: 20px;
+//      color: $shuttle-gray;
+//      @media #{$media_lg} {
+//        font-size: 16px !important;
+//        br {
+//          display: none;
+//        }
+//      }
+//      @media #{$media_md} {
+//        font-size: 16px;
+//      }
+//    }
+//    .btn {
+//      margin-top: 40px;
+//    }
+//    @media #{$media_lg} {
+//      padding-left: 80px;
+//    }
+//    @media #{$media_md} {
+//      padding-top: 50px;
+//      padding-left: 0;
+//      margin: 45px;
+//    }
+//  }
+//}

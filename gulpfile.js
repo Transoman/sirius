@@ -47,6 +47,8 @@ gulp.task('js', function() {
 		'src/libs/jquery/dist/jquery.min.js',
 		'src/libs/jquery/jquery.popupoverlay.js',
 		'src/libs/slick/slick.min.js',
+		// 'src/libs/magnific-popup/dist/jquery.magnific-popup.min.js',
+		'src/libs/jquery-popup-overlay/jquery.popupoverlay.js',
 		'src/js/common.js' // Always at the end
 		])
 	.pipe(plumber())

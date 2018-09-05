@@ -86,10 +86,8 @@ body.meeting {
     }
   }
   .meeting-content {
-    padding-top: 120px;
     h2 {
       font-family: $font;
-      font-size: 60px;
       font-weight: 300;
       color: #141516;
       text-transform: uppercase;
@@ -561,10 +559,82 @@ body.meeting {
 .group-previous {
   text-align: center;
   padding-bottom: 120px;
+  padding-top: 115px;
   .btn {
     padding:0 38px;
     line-height: 70px;
     width: auto;
     max-width: initial;
+  }
+  h2{
+    font-size: 60px;
+    font-family: $font-secondary;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    text-align: left;
+    color: #141516;
+    strong{
+      font-weight: bold;
+    }
+  }
+}
+.partners {
+  padding-top: 120px;
+  padding-bottom: 140px;
+  h2 {
+    text-transform: uppercase;
+    font-family: $font;
+    font-size: 60px;
+    font-weight: 100;
+    margin-bottom: 75px;
+    color: #000;
+    strong {
+      font-family: $font;
+      font-weight: 700;
+    }
+  }
+}
+
+.partners__block {
+  border: 1px solid #e2e7ee;
+  padding: 30px 30px 45px;
+  img {
+    margin-bottom: 60px;
+  }
+  h5 {
+    font-size: 30px;
+    color: #0d1e30;
+    margin-bottom: 40px;
+  }
+  p {
+    color: #5d6770;
+    font-size: 18px;
+    line-height: 32px;
+    font-family: "Roboto",sans-serif;
+    margin-bottom: 25px;
+    font-weight: 400;
+    strong {
+      color: #303c47;
+    }
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .partners {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    h2 {
+      font-size: 24px;
+      margin-bottom: 40px;
+    }
+  }
+  .partners__block {
+    h5 {
+      font-size: 20px;
+    }
+    p {
+      font-size: 14px;
+    }
   }
 }
