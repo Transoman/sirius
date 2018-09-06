@@ -285,8 +285,16 @@ table {
   width: 240px;
   height: 75px;
   margin: 150px auto 0;
+  font-size: 14px;
 }
+.btn__school_club-fee {
+  margin: 125px auto 20px;
+  padding: 25px 10px;
+  a{
 
+    display: block;
+  }
+}
 .btn__school_twelfth-screen {
   margin: 90px auto 0;
   width: 370px;

@@ -18,7 +18,9 @@
 <header class="meeting-header">
     <div class="container">
         <div class="meeting-header__info">
-            <a href="#"><img src="img/meeting_logo.png" alt=""></a>
+            <a href="#" class="meeting-header__logo">
+                <img src="img/meeting_logo.png" alt="">
+            </a>
             <div class="meeting-header__contacts">
                 <div><i class="fas fa-calendar-alt"></i><span>Дата встречи</span><br>13 сентября 2018</div>
                 <div><i class="fas fa-clock"></i><span>Время</span><br>19:30</div>
@@ -26,33 +28,29 @@
                     store & club
                 </div>
             </div>
-            <a href="#" class="btn callback_open">Записаться на встречу</a>
+            <a href="#" class="indicator-btn callback_open">Записаться на встречу</a>
         </div>
     </div>
     <div class="meeting-header__title">
         <div class="container">
-            <h1>Приходите на встречу <br>
-                закрытого <strong>клуба <br>
-                    криптомиллионеров</strong></h1>
-            <p><span>Sirius Crypto Club</span> - децентрализованное сообщество <br> успешных криптоинвесторов по всему
-                миру</p>
+            <h1>Приходите на встречу <br>закрытого <strong>клуба <br>криптомиллионеров</strong></h1>
+            <p><span>Sirius Crypto Club</span> - децентрализованное сообщество <br> успешных криптоинвесторов по всему миру</p>
             <a href="#" class="btn callback_open">Я приду!</a>
         </div>
     </div>
 </header>
 <main class="meeting-content">
-    <section class="meeting-content__we-know">
+    <section class="meeting-content__we-know we-know">
         <div class="container">
             <div class="row">
                 <div class="col col-lg-8">
-                    <h2><strong>Мы знаем, чего ожидать</strong>
-                        от 2018-2019 года, а Вы?</h2>
-                    <p>На встречи с топовыми криптоинвесторами России вы узнаете как сделать
+                    <h2><strong>Мы знаем, чего ожидать</strong> от 2018-2019 года, а Вы?</h2>
+                    <p class="section-desc">На встречи с топовыми криптоинвесторами России вы узнаете как сделать
                         максимальные иксы в 2018-2019 году.</p>
                 </div>
             </div>
             <div class="row">
-                <div class="col col-lg-5">
+                <div class="col col-lg-6">
                     <ul>
                         <li>7 подводных камней о которых молчит
                             криптомир
@@ -64,86 +62,105 @@
                             лет обречены на провал?
                         </li>
                     </ul>
+
+                    <p class="we-know__show">Посмотреть <br>видеоприглашение</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="we-know__video-wrap">
+                        <p class="we-know__show we-know__show--mobile">Посмотреть <br>видеоприглашение</p>
+                        <img src="img/wait_bg.png" alt="" class="we-know__img">
+                        <a href="https://www.youtube.com/watch?v=C0DPdy98e4c" data-fancybox class="btn-play"><i class="fas fa-play"></i></a>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col">
-                    <blockquote>
-                        Посмотреть видеоприглашение
-                        <a href="#"><i></i></a>
-                    </blockquote>
-                </div>
-            </div>
+
             <div class="meeting-content__reason row">
-                <div class="col col-sm-3">
-                    <strong>55</strong>
-                    членов в клубе
+                <div class="col-xl-3 col-md-6">
+                    <div class="meeting-content__reason-item">
+                        <strong>55</strong>
+                        <p>членов в клубе</p>
+                    </div>
                 </div>
-                <div class="col col-sm-3">
-                    <strong>300 <span>тыс. долл.</span></strong>
-                    средний торговый депозит
-                    участника
+                <div class="col-xl-3 col-md-6">
+                    <div class="meeting-content__reason-item">
+                        <strong>300 <span>тыс. долл.</span></strong>
+                        <p>средний торговый депозит <br>участника</p>
+                    </div>
                 </div>
-                <div class="col offset-sm-1 col-sm-5">
-                    <strong>$16,5 <span>млн.</span></strong>
-                    объем крипто-активов <br>
-                    участников клуба
+                <div class="offset-xl-1 col-xl-5 col-md-6">
+                    <div class="meeting-content__reason-item">
+                        <strong>$16,5 <span>млн.</span></strong>
+                        <p>объем крипто-активов <br>участников клуба</p>
+                    </div>
                 </div>
-                <div class="col col-sm-3">
-                    <strong>80%</strong>
-                    точность аналитики
-                    для торговли
+                <div class="col-xl-3 col-md-6">
+                    <div class="meeting-content__reason-item">
+                        <strong>80%</strong>
+                        <p>точность аналитики <br>для торговли</p>
+                    </div>
                 </div>
-                <div class="col col-sm-3">
-                    <strong>192%</strong>
-                    годовых доходность
-                    участников клуба в USD
+                <div class="col-xl-3 col-md-6">
+                    <div class="meeting-content__reason-item">
+                        <strong>192%</strong>
+                        <p>годовых доходность <br>участников клуба в USD</p>
+                    </div>
                 </div>
-                <div class="col offset-sm-1 col-sm-5">
-                    <a href="#" class="btn callback_open">Записаться на встречу</a>
+                <div class="offset-xl-1 col-xl-5 col-md-6">
+                    <div class="meeting-content__reason-item">
+                        <a href="#" class="btn callback_open">Записаться на встречу</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="meeting-content__themes">
+
+    <section class="meeting-content__themes themes">
         <div class="container">
             <div class="row">
-                <div class="col col-sm-8">
-                    <h2><strong>Темы которые мы разберем</strong> на встрече</h2></div>
-                <div class="col col-sm-4">
+                <div class="col-sm-12">
+                    <h2><strong>Темы которые мы разберем</strong> на встрече</h2>
                     <p class="statistic">
                         <img src="img/percent.png" width="90" height="90">
-                        <span>участников улучшили <br>
-                показатели торговли</span>
+                        <span>участников улучшили <br>показатели торговли</span>
                     </p>
                 </div>
             </div>
             <div class="row meeting-content__themes-list">
-                <div class="col col-sm-5 offset-sm-1">
-                    <strong>Нэтворкинг</strong>
-                    Знакомства с участниками рынка, презентация
-                    возможностей и пользы
+                <div class="col-md-6">
+                    <div class="meeting-content__themes-list-item">
+                        <div class="number">01</div>
+                        <strong>Нэтворкинг</strong>
+                        <p>Знакомства с участниками рынка, презентация <br>возможностей и пользы</p>
+                    </div>
                 </div>
-                <div class="col col-sm-5 offset-sm-1">
-                    <strong>Анализ рынка</strong>
-                    И приптопрогнозы на осень и зиму 2018 года
+                <div class="col-md-6">
+                    <div class="meeting-content__themes-list-item">
+                        <div class="number">02</div>
+                        <strong>Анализ рынка</strong>
+                        <p>И приптопрогнозы на осень и зиму 2018 года</p>
+                    </div>
                 </div>
-                <div class="col col-sm-5 offset-sm-1">
-                    <strong>Информация о криптомошенника</strong>
-                    Какие схемы мошенничества на рынке и как остерегаться недобросовестных покупателей
-                    и продавцов. Реальные истории и кейсы.
-                    3 действующих способа мошенничества
-                    и методы защиты
+                <div class="col-md-6">
+                    <div class="meeting-content__themes-list-item">
+                        <div class="number">03</div>
+                        <strong>Информация о криптомошенника</strong>
+                        <p>Какие схемы мошенничества на рынке и как остерегаться недобросовестных покупателей <br>
+                        и продавцов. Реальные истории и кейсы. <br>
+                        3 действующих способа мошенничества <br>
+                        и методы защиты</p>
+                    </div>
                 </div>
-                <div class="col col-sm-5 offset-sm-1">
-                    <strong>Юридическая безопастность</strong>
-                    участников рынка
-                    Как заключать сделки в криптовалютах безопасно
-                    и в рамках закона
+                <div class="col-md-6">
+                    <div class="meeting-content__themes-list-item">
+                        <div class="number">04</div>
+                        <strong>Юридическая безопастность</strong>
+                        <p>участников рынка <br> Как заключать сделки в криптовалютах безопасно <br>и в рамках закона</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
     <section class="group-previous">
         <div class="container">
             <h2>Предыдущие
@@ -171,42 +188,51 @@
             </div>
         </div>
     </section>
-    <section class="meeting-content__result">
+
+    <section class="meeting-content__result result">
         <div class="container">
             <h2><strong>По итогам</strong> ВЫ ПОЛУЧИТЕ</h2>
+
             <div class="row">
                 <div class="col col-sm-4">
-                    <img src="img/result-1.png" alt=""><br>
-                    Новые знакомства <br>с профессионалами рынка
+                    <div class="result__item">
+                        <img src="img/result-1.png" alt="">
+                        <p>Новые знакомства <br>с профессионалами рынка</p>
+                    </div>
                 </div>
                 <div class="col col-sm-4">
-                    <img src="img/result-2.png" alt=""><br>
-                    Доступ к сообществу
-                    профессионалов
+                    <div class="result__item">
+                        <img src="img/result-2.png" alt="">
+                        <p>Доступ к сообществу <br> профессионалов</p>
+                    </div>
                 </div>
                 <div class="col col-sm-4">
-                    <img src="img/result-3.png" alt=""><br>
-                    Профессиональную аналитику
-                    рынка от экспертов
+                    <div class="result__item">
+                        <img src="img/result-3.png" alt="">
+                        <p>Профессиональную аналитику <br>рынка от экспертов</p>
+                    </div>
                 </div>
                 <div class="col col-sm-4">
-                    <img src="img/result-4.png" alt=""><br>
-                    1 новый актив для <br>
-                    инвестиций в криптовалюте <br>
-                    с доходностью от х2 ​
+                    <div class="result__item">
+                        <img src="img/result-4.png" alt="">
+                        <p>1 новый актив для <br>инвестиций в криптовалюте <br>с доходностью от х2</p>
+                    </div>
                 </div>
                 <div class="col col-sm-4">
-                    <img src="img/result-5.png" alt=""><br>
-                    Инсайды от представителей
-                    государственного сектора,<br>
-                    фондов и бирж
+                    <div class="result__item">
+                        <img src="img/result-5.png" alt="">
+                        <p>Инсайды от представителей <br>государственного сектора, <br>фондов и бирж</p>
+                    </div>
                 </div>
-                <div class="col col-sm-4"><br>
-                    <a href="#" class="btn callback_open">Записаться на встречу</a>
+                <div class="col col-sm-4">
+                    <div class="result__item">
+                        <a href="#" class="btn callback_open">Записаться на встречу</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
     <section class="meeting-content__organization">
         <div class="container">
             <h2><strong>Организаторы</strong><br>
@@ -253,20 +279,24 @@
             </div>
         </div>
     </section>
-    <section class="meeting-content__participation">
+
+    <section class="meeting-content__participation participation">
         <div class="container">
             <div class="row">
                 <div class="col col-sm-5">
-                    <img src="img/participation_bg.png" alt="">
+                    <div class="participation__img-wrap">
+                        <img src="img/participation_bg.png" alt="">
+                    </div>
                 </div>
                 <div class="col col-sm-7">
-                    <h2><strong>Участие</strong> в мероприятии -<br>
-                        <strong>платное <span>3000 ₽</span></strong></h2>
-                    <blockquote>
-                        Мы хотим видеть на встрече людей, которые реально
-                        заинтересованы в информации и новых знакомствах.
-                        Нам не нужны "халявщики".
-                    </blockquote>
+                    <div class="participation__content">
+                        <h2><strong>Участие</strong> в мероприятии -<br><strong>платное <span>3000 ₽</span></strong></h2>
+                        <blockquote>
+                            Мы хотим видеть на встрече людей, которые реально
+                            заинтересованы в информации и новых знакомствах.
+                            Нам не нужны "халявщики".
+                        </blockquote>
+                    </div>
                 </div>
                 <div class="col">
                     <a href="#" class="btn callback_open">Записаться на встречу</a>
@@ -274,30 +304,72 @@
             </div>
         </div>
     </section>
-    <div class="form-screen">
+
+    <section class="place">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="place__content">
+                        <h2><strong>Место</strong> <br>проведения</h2>
+                        <img src="img/deecrypto.jpg" alt="">
+                        <h3>DeeCrypto Store & Club –</h3>
+                        <p>это открытое пространство для всех, <br>кому интересно наше цифровое будущее</p>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="place__img-wrap">
+                        <img src="img/place.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.place -->
+
+    <div class="form-screen form-screen--meeting">
       <div class="container">
-        <h2>
-          <strong>Оставьте заявку</strong>
-          <br> прямо сейчас </h2>
+        <h2><strong>Оставьте заявку</strong> прямо сейчас</h2>
         <div class="row">
           <div class="col-xl-7">
             <div class="form-screen__book">
-              <img src="../img/form-book.png" alt=""> </div>
+              <img src="../img/form-book.png" alt="">
+            </div>
           </div>
+
           <div class="col-xl-5">
             <div class="form-screen__form">
-              <h4>Оставить заявку на обучение</h4>
-              <p>Старт потока 11 августа, 11:00 - 18:00</p>
-              <form action="" method="post">
-                <input type="text" placeholder="Ваше имя" class="form-screen__form_text">
-                <input type="tel" placeholder="Ваш телефон" class="form-screen__form_text">
-                <div class="btn__school btn__school_form">
-                  <a href="#" >Я приду!</a>
+              <h4>Запишитесь на одну <br>из встреч криптоклуба <br>в Москве</h4>
+              <p>Старт потока 11 августа, 
+                <button class="drop-btn">11:00 - 18:00</button>
+                <span class="drop-content">
+                    <a href="#">9.08 (19:30)</a>
+                    <a href="#">9.08 (19:30)</a>
+                    <a href="#">16.08 (19:30)</a>
+                    <a href="#">23.08 (19:30)</a>
+                    <a href="#">30.08 (19:30)</a>
+                </span>
+            </p>
+              <form action="" method="post" class="form meeting-form">
+                <input type="hidden" name="subject" value="Заявка на встречу криптоклуба в Москве">
+                <input type="hidden" name="time" value="">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Ваше имя" class="form__field" required>
                 </div>
-                <label>
-                  <input type="checkbox"> Нажимая на кнопку "Я приду", я даю согласие на обработку персональных данных
-                  <a href="#">политикой конфиденциальности</a>
-                </label>
+                <div class="form-group">
+                    <input type="tel" name="phone" placeholder="Ваш телефон" class="form__field" required>
+                </div>
+                <div class="form-group form-group--btn">
+                    <input type="submit" value="Я приду!" class="form__btn indicator-btn">
+                </div>
+                <div class="form-group">
+                    <label>
+                      <input type="checkbox" name="term" required> Нажимая на кнопку "Я приду", я даю согласие на обработку персональных данных
+                      <a href="#">политикой конфиденциальности</a>
+                    </label>
+                </div>
+
               </form>
             </div>
           </div>

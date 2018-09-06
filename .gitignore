@@ -3,6 +3,7 @@
 /psd/
 /app/css/
 /built/css
+/built/js
 /**/_backstage
 /**/package-lock.json
 /**/Thumbs.db

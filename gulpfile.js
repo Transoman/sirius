@@ -51,6 +51,7 @@ gulp.task('js', function() {
 		'src/libs/jquery-popup-overlay/jquery.popupoverlay.js',
 		'src/libs/jquery-mask-plugin/dist/jquery.mask.min.js',
 		'src/libs/jquery-validation/dist/jquery.validate.min.js',
+    'src/libs/fancybox/jquery.fancybox.js',
 		'src/js/common.js' // Always at the end
 		])
 	.pipe(plumber())
@@ -86,7 +87,8 @@ gulp.task('copy-webfonts', function () {
 });*/
 
 gulp.task('watch', ['styles', 'js', 'browser-sync'], function() {
-	gulp.watch('src/'+syntax+'/**/*.'+syntax+'', ['styles']);
+  // gulp.watch('src/'+syntax+'/**/*.'+syntax+'', ['styles']);
+	gulp.watch('src/'+syntax+'/**/*.{sass,scss}', ['styles']);
 	gulp.watch(['src/js/**/*.js'], ['js']);
 	gulp.watch('built/*.html', browsersync.reload)
 });

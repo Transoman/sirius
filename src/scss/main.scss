@@ -1,4 +1,5 @@
 @import "base/base";
+@import "blocks/form";
 @import "pages/mlp-25";
 @import "pages/thanks";
 @import "pages/thanks-full";
@@ -70,46 +71,6 @@ main.content {
   & > .content__bg {
     padding-bottom: 434px;
     background: url('../img/content-book-bg_shadow.png') no-repeat top -2px left calc(50% + 354px);
-    h1 {
-      margin: 147px 0 86px;
-      letter-spacing: -1px;
-      line-height: 72px;
-      strong {
-        letter-spacing: 0;
-      }
-      @media #{$media_xl}{
-        font-size: 50px;
-        margin: 100px 0 70px 0;
-      }
-      @media #{$media_lg} {
-        font-size: 40px;
-        line-height: 55px;
-        margin: 50px 0 40px 0;
-      }
-      @media #{$media_md} {
-        font-size: 30px;
-        line-height: 40px;
-        margin: 25px 0 20px 0;
-      }
-      @media #{$media_sm} {
-        margin-top: 0;
-        margin-bottom: 550px;
-        font-size: 22px;
-        line-height: 28px;
-        position: relative;
-        &::after {
-          content: '';
-          background: url('../img/scroll.png')no-repeat  center center;
-          background-size: contain;
-          display: inline-block;
-          position: absolute;
-          width: 18px;
-          height: 48px;
-          bottom: -50px;
-          left: calc(50% - 9px);
-        }
-      }
-    }
     .content__book {
       display: inline-block;
       position: absolute;
@@ -215,7 +176,7 @@ main.content {
         }
       }
       @media #{$media_sm} {
-        margin-top: 65px;
+        margin-top: 35px;
       }
     }
     @media #{$media_retina} {
@@ -242,6 +203,47 @@ main.content {
       background-position-x: calc(50% + 40px);
       background-position-y: 140px;
       padding-bottom: 115px;
+    }
+  }
+  h1 {
+    margin: 147px 0 86px;
+    letter-spacing: -1px;
+    line-height: 72px;
+    font-weight: 300;
+    strong {
+      letter-spacing: 0;
+    }
+    @media #{$media_xl} {
+      font-size: 50px;
+      margin: 100px 0 70px 0;
+    }
+    @media #{$media_lg} {
+      font-size: 40px;
+      line-height: 55px;
+      margin: 50px 0 40px 0;
+    }
+    @media #{$media_md} {
+      font-size: 30px;
+      line-height: 40px;
+      margin: 25px 0 20px 0;
+    }
+    @media #{$media_sm} {
+      margin-top: 0;
+      margin-bottom: 550px;
+      font-size: 22px;
+      line-height: 28px;
+      position: relative;
+      &::after {
+        content: '';
+        background: url('../img/scroll.png')no-repeat  center center;
+        background-size: contain;
+        display: inline-block;
+        position: absolute;
+        width: 18px;
+        height: 48px;
+        bottom: -50px;
+        left: calc(50% - 9px);
+      }
     }
   }
   @media #{$media_retina} {
