@@ -643,15 +643,10 @@ table {
   }
   ul li {
     p {
-      color: #0e64ed;
       font-size: 18px;
-      font-weight: 500;
       font-family: $font_secondary;
-      padding: 10px;
-      font-size: 20px;
-      line-height: 36px;
+      padding: 10px 30px;
       color: #5d6770;
-      padding: 5px 10px;
       position: relative;
       font-weight: 400;
       &::before {
@@ -662,9 +657,9 @@ table {
         position: absolute;
         top: 21px;
         border-radius: 4px;
-        -webkit-transform: translateX(-5px);
-        -ms-transform: translateX(-5px);
-        transform: translateX(-5px);
+        -webkit-transform: translateX(-10px);
+        -ms-transform: translateX(-10px);
+        transform: translateX(-10px);
       }
     }
     padding: 0 50px;
@@ -686,7 +681,9 @@ table {
   padding-bottom: 120px;
   background: url(../img/bg-transparant-50.png);
 }
-
+.form-screen h2{
+  margin-bottom: 80px;
+}
 .course-fee h2, .form-screen h2 {
   text-transform: uppercase;
   font-size: 60px;
@@ -965,7 +962,48 @@ table {
     right: 100px;
   }
 }
-
+@media only screen and (max-width: 1200px){
+  .second-screen h2, .founders-school h2, .top5 h2,.fifth-screen h2, .key-difference h2, .results h2,.slider-toggle h2,.course-fee h2, .form-screen h2,.group-previous h2,.twelfth-screen h2,.contacts__item h4{
+    font-size: 48px;
+    margin-bottom: 50px;
+  }
+  .contacts__info{
+    margin-top: 0;
+  }
+}
+@media only screen and (max-width: 620px){
+  .second-screen h2, .founders-school h2, .top5 h2,.fifth-screen h2, .key-difference h2, .results h2,.slider-toggle h2,.course-fee h2, .form-screen h2,.group-previous h2,.twelfth-screen h2,.contacts__item h4{
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  .second-screen p, .founders-school p, .fifth-screen p, .key-difference p, .results p,.slider-toggle p,.course-fee p,
+  .form-screen p,.group-previous p,.twelfth-screen p{
+    font-size: 16px;
+  }
+  .founders-school h3 ,.founders-school p, .founders-school, .founders-school__social{
+    margin-left: 0!important;
+  }
+  .top5 h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 65px;
+  }
+  .top5 p{
+    font-size: 15px;
+  }
+  .fifth-screen__photo img{
+    margin-top: 10px;
+  }
+  .btn__school_top5{
+    top: 35%;
+  }
+    .contacts__info{
+    margin-top: 0;
+  }
+  .group-slider{
+    margin-bottom: 30px;
+  }
+}
 @media only screen and (max-width: 998px) {
   .fifth-screen__photo {
     img {
@@ -1092,13 +1130,15 @@ table {
     img {
       position: absolute;
       width: 55px;
+      top: 5px;
     }
     p {
       &:last-child {
-        margin-bottom: 60px;
+        margin-bottom: 35px;
       }
-      margin-bottom: 30px;
+      margin-bottom: 35px;
       padding-left: 75px;
+      font-size: 14px;
     }
   }
 }
@@ -1127,12 +1167,14 @@ table {
     font-size: 14px;
   }
   .btn__school_key {
-    margin: 50px auto 0;
+    margin: 40px auto 0;
+    height: 60px;
   }
   .btn__school_twelfth-screen {
     width: 270px;
     font-size: 14px;
-    margin: 40px auto 0;
+    margin: 25px auto 0;
+    height: 60px;
   }
   .btn__school_form {
     width: 270px;
@@ -1167,6 +1209,13 @@ table {
     p {
       font-size: 18px;
     }
+  }
+  .btn__school_results{
+    margin-top: 20px;
+    height: 60px;
+  }
+  .btn__school_top5,.btn__school_second-screen{
+    height: 60px;
   }
 }
 
@@ -1203,7 +1252,7 @@ table {
 @media only screen and (max-width: 520px) {
   .founders-school {
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 10px;
   }
   .results {
     padding-top: 50px;
@@ -1241,7 +1290,15 @@ table {
   }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 620px) {
+  .btn__school_form{
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .form-screen__form h4{
+    font-size: 24px;
+    padding-bottom: 20px;
+  }
   .second-screen {
     padding-bottom: 0;
     p {
@@ -1253,19 +1310,28 @@ table {
   }
   .course-fee h2, .fifth-screen h2, .founders-school h2, .key-difference h2, .results h2, .second-screen h2, .top5 h2,.group-previous h2 {
     font-size: 24px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
   .fifth-screen, .second-screen, .top5 {
     padding-top: 50px;
   }
   .fifth-screen {
-    padding-bottom: 70px;
+    padding-bottom: 50px;
     p {
       font-size: 14px;
     }
   }
   .key-difference p, .slider-toggle h2 strong {
     font-size: 14px;
+  }
+  .key-difference p{
+    line-height: 1.3em;
+  }
+  .slider-toggle h2 strong{
+    margin-bottom: 20px;
+  }
+  .slider{
+    padding: 15px
   }
   .course-fee, .form-screen, .key-difference, .slider-toggle, .twelfth-screen {
     padding-top: 50px;
@@ -1276,8 +1342,9 @@ table {
       padding: 0;
     }
     h5 {
-      font-size: 40px;
-      bottom: 175px;
+      font-size: 36px;
+      font-weight: 400;
+      bottom: 170px;
     }
   }
   .form-screen h2, .twelfth-screen h2 {
@@ -1285,7 +1352,8 @@ table {
   }
   .twelfth-screen__content p {
     font-size: 14px;
-    margin-bottom: 0;
+    margin-bottom: 10px;
+    line-height: 1.3em;
   }
   .slider-toggle {
     background: #176ff0;
@@ -1295,8 +1363,9 @@ table {
     }
     .slider {
       .slide__head {
-        padding: 20px 50px 20px 55px;
+        padding: 10px 50px 10px 55px;
         font-size: 16px;
+        font-weight: 500;
         &:after {
           width: 50px;
         }
@@ -1315,6 +1384,9 @@ table {
         line-height: 20px;
       }
     }
+  }
+  .course-fee__block h4{
+    font-size: 20px;
   }
 }
 

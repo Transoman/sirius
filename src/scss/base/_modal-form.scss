@@ -93,7 +93,7 @@
   -ms-transform: scale(1);
   transform: scale(1);
 }
-
+.modal-form{
 input[type='text'], input[type='tel']{
   margin: 20px auto;
   border: 1px solid #0e69f1;
@@ -144,4 +144,5 @@ label.error {
     transform: translateY(-20px);
     opacity: 1;
   }
+}
 }
