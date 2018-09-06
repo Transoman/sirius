@@ -331,11 +331,19 @@ main.content {
   p {
     margin-bottom: 0;
   }
+// <<<<<<< HEAD
   // @media #{$media_md} {
   //   position: absolute;
   //   width: 100%;
   //   bottom: 0;
   // }
+// =======
+//   @media #{$media_md} {
+//     position: relative;
+//     width: 100%;
+//     bottom: 0;
+//   }
+// >>>>>>> 9d3fb171d81b5d971425ec47ca0f7f0f8acfc8f6
   @media #{$media_sm} {
     border-top:1px solid #9da7b0;
     p {

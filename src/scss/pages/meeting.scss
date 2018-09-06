@@ -1328,6 +1328,7 @@ body.meeting {
 .partners__block {
   border: 1px solid #e2e7ee;
   padding: 30px 30px 45px;
+  margin-bottom: 30px;
   img {
     margin-bottom: 60px;
   }
@@ -1341,18 +1342,29 @@ body.meeting {
     font-size: 18px;
     line-height: 32px;
     font-family: "Roboto",sans-serif;
-    margin-bottom: 25px;
     font-weight: 400;
     strong {
       color: #303c47;
     }
   }
 }
-
+@media only screen and (max-width: 620px) {
+  .partners{
+    padding-bottom: 30px;
+  }
+  .partners__block{
+    padding: 20px 5px 20px;
+  }
+  .partners__block img{
+    margin-bottom: 10px;
+  }
+  .partners__block h5{
+    margin-bottom: 15px;
+  }
+}
 @media only screen and (max-width: 425px) {
   .partners {
     padding-top: 50px;
-    padding-bottom: 50px;
     h2 {
       font-size: 24px;
       margin-bottom: 40px;
