@@ -4,9 +4,14 @@
 
 	if ( isset($_POST) ) {
 		$name = htmlspecialchars(trim($_POST['name']));
-//		$email = htmlspecialchars(trim($_POST['email']));
-		$phone = htmlspecialchars(trim($_POST['phone']));
+		$email = isset($_POST['email']) ? htmlspecialchars(trim($_POST['email'])) : '';
+		$phone = isset($_POST['phone']) ? htmlspecialchars(trim($_POST['phone'])) : '';
 		$subject = $_POST['subject'] ? htmlspecialchars(trim($_POST['subject'])) : '';
+
+		$time = isset($_POST['time']) ? htmlspecialchars(trim($_POST['time'])) : '';
+		$role = isset($_POST['role']) ? htmlspecialchars(trim($_POST['role'])) : '';
+		$size = isset($_POST['size']) ? htmlspecialchars(trim($_POST['size'])) : '';
+
 		$to = 'Elena357910@yandex.com';
 
 		$headers = "From: $SITE_TITLE \r\n";
@@ -16,6 +21,18 @@
 		$data = '<h1>'.$subject."</h1>";
 		$data .= 'Имя: '.$name."<br>";
 		$data .= 'Телефон: '.$phone."<br>";
+
+		if ($time) {
+			$data .= 'Время встречи: '.$time."<br>";
+		}
+
+		if ($role) {
+			$data .= 'Роль: '.$role."<br>";
+		}
+
+		if ($size) {
+			$data .= 'Объем инвестиции: '.$size."<br>";
+		}
 
 		$message = "<div style='background:#ccc;border-radius:10px;padding:20px;'>
 				".$data."

@@ -120,7 +120,7 @@ body.meeting {
         font-weight: 400;
         margin-top: 34px;
         margin-bottom: 72px;
-        span {
+        a {
           font-weight: 700;
           color: #fff;
           text-decoration: underline;
@@ -1103,12 +1103,6 @@ body.meeting {
         &:hover .drop-content {
           display: block;
         }
-        @media #{$media_sm} {
-          margin-bottom: 0;
-        }
-      }
-      @media #{$media_sm} {
-        padding: 20px 10px;
       }
     }
     .form__field {
@@ -1119,9 +1113,7 @@ body.meeting {
       padding-top: 18px;
       padding-bottom: 18px;
     }
-    .form-group--btn {
-      margin-bottom: 30px;
-    }
+
   }
 }
 

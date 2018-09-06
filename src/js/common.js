@@ -24,6 +24,25 @@ $(window).on('load', function(){
         }
     });
 
+    $('.club-form').validate({
+        rules: {
+            phone: {
+                required: true,
+                phoneno: true
+            },
+            name: 'required',
+        },
+        messages: {
+            name: "Введите Ваше имя",
+            phone: "Введите Ваш телефон",
+            email: "Введите Ваш E-mail",
+        },
+        submitHandler: function(form) {
+            var t = $('.club-form').serialize();
+            ajaxSend('.club-form', t);
+        }
+    });
+
     $('.meeting-form').validate({
         rules: {
             phone: {
@@ -50,7 +69,8 @@ $(window).on('load', function(){
             data: data,
             success: function() {
                 $(".modal-form").popup("hide");
-                $("#thanks").popup("show");
+                window.location.href = "pdf-thanks-full.html"
+                // $("#thanks").popup("show");
                 setTimeout(function() {
                     $(formName).trigger('reset');
                 }, 2000);

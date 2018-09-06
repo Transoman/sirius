@@ -58,6 +58,11 @@
     font-weight: 500;
     color: #303c47;
     margin-bottom: 29px;
+    @media #{$media_sm} {
+      margin-bottom: 10px;
+      font-size: 18px;
+      font-weight: 500;
+    }
   }
   p {
     color: #5d6770;
@@ -68,6 +73,9 @@
     strong {
       display: block;
       color: #6598ea;
+    }
+    @media #{$media_sm} {
+      font-size: 16px;
     }
   }
   img {
@@ -115,6 +123,12 @@
   }
   .btn__school__advantages-club {
     width: 270px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    height: 60px;
+    a {
+      font-size: 14px !important;
+    }
   }
 }
 

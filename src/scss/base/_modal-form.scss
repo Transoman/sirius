@@ -111,30 +111,7 @@ input[type='submit']{
   font-size: 18px;
   font-family: $font-secondary;
 }
-label.error {
-  position: absolute;
-  top: 5px;
-  left: 80px;
-  width: 200px;
-  padding: 3px 8px;
-  color: #fff;
-  text-align: center;
-  background: tomato;
-  z-index: 2;
-  transform: translateY(-20px);
-  transition: all .25s ease;
-  animation: error 0.25s linear;
-  &::before{
-    content: '';
-    position: absolute;
-    bottom: -7px;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 7px 6.5px 0 6.5px;
-    border-color: tomato transparent transparent transparent;
-  }
-}
+
 @keyframes error{
   0% {
     transform: translateY(0);

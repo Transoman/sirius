@@ -2,5 +2,8 @@
   padding-top: 65px;
   h2{
     margin-bottom: 90px;
+    @media #{$media_sm} {
+      margin-bottom: 30px;
+    }
   }
 }

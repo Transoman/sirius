@@ -34,7 +34,7 @@ body.meeting .meeting-content .section-form p {
 		flex-wrap: wrap;
 		justify-content: center;
 
-		label{
+		label:not(.error){
 			font-size: 18px;
 			color: #5d6770;
 			margin-left: 10px;

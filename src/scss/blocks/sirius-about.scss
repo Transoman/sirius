@@ -1,10 +1,13 @@
 .sirius-about{
    background-color: #f3faff; 
   padding-bottom: 140px;
+  @media #{$media_sm} {
+    padding-bottom: 0;
+  }
 
 }
 .sirius-about__wrap {
-padding-top: 90px;
+  padding-top: 90px;
   padding-bottom: 80px;
   h2 {
     margin-right: 65px;
@@ -12,7 +15,28 @@ padding-top: 90px;
     font-size: 60px;
     font-weight: 400;
     margin-bottom: 0 !important;
-
+    @media #{$media_sm} {
+      margin-right: 20px;
+    }
+    br {
+      display: none;
+      @media #{$media_sm} {
+        display: block;
+      }
+    }
+  }
+  img {
+     @media #{$media_lg} {
+      width: 100px;
+      height: 100px;
+     }
+     @media #{$media_sm} {
+      width: 80px;
+      height: 80px;
+     }
+  }
+  @media #{$media_lg} {
+    padding-bottom: 40px;
   }
 }
 .sirius-about__wrap{
@@ -21,29 +45,26 @@ padding-top: 90px;
   align-items: center; 
 }
 
-.sirius-about__card  {
-  padding: 42px 38px 0 37px;
+.sirius-about__card {
+  padding: 40px 25px;
   background-color: #fff;
-  min-height: 300px;
+  height: 100%;
   box-shadow: 0 5px 10px rgba(#dbdbdb, .4);
-
-   p{
+   p {
     color: #5d6770 !important;
     font-size: 22px !important;
     font-weight: 400 !important;
-     span{
-    color: #303c47 !important;
-    font-size: 22px !important;
-    font-weight: 500 !important;
-   
+    span{
+      color: #303c47 !important;
+      font-size: 22px !important;
+      font-weight: 500 !important;
+    }
   }
-  }
-
 }
 
-.sirius-about__card{
+.sirius-about__card {
   position: relative;
-  border-radius: 25px;  
+  border-radius: 25px;
   &::before{
     position: absolute;
     content: '';
@@ -52,8 +73,13 @@ padding-top: 90px;
     background-color: #4086f4;
     top: 0; 
     left: 25px;
-
-
+  }
+  @media #{$media_lg} {
+    padding: 20px;
+  }
+  @media #{$media_md} {
+    border-radius: 10px;
+    height: auto;
   }
 }
 
@@ -87,30 +113,10 @@ padding-top: 90px;
 
 }
 
-.sirius-about__card{
-  min-height: 200px !important;  
-}
-
-}
-
-
-@media only screen and (max-width : 992px){
-  .sirius-about__card{
-    padding: 15px 15px 0 15px; 
-    min-height: 185px !important; 
-  }
 }
 
 @media only screen and (max-width : 767px){
  .sirius-about__card{
     margin-bottom: 20px;  
-    padding: 20px; 
-    min-height: 120px !important; 
-  }  
-}
-
-@media only screen and (max-width : 425px){
-  .sirius-about{
-    padding-bottom: 50px;
   }
 }

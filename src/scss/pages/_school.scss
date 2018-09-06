@@ -114,6 +114,7 @@ table {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 10px 0;
   .nav ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -123,33 +124,14 @@ table {
   -ms-flex-align: center;
   align-items: center;
   -webkit-box-pack: justify;
-  min-height: 90px;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  width: 100%;
-  .logo a {
-    font-family: $font_secondary;
-    font-size: 10px;
-    color: #5d6770;
-    display: inline-block;
-    width: 210px;
-    position: relative;
-    letter-spacing: .18px;
-    line-height: 10px;
-    text-transform: uppercase;
-    strong {
-      color: #141516;
-      text-transform: none;
-      font-size: 23px;
-      line-height: initial;
-      margin-top: 7px;
-      display: inherit;
-    }
-    img {
-      width: 63px;
-      height: 64px;
-      margin: 0 6px 0 4px;
-      float: left;
+  @media #{$media_sm} {
+    padding: 5px 0 0;
+  }
+  .logo {
+    @media #{$media_sm} {
+      width: 125px;
     }
   }
   .nav ul {
@@ -335,6 +317,7 @@ table {
     max-width: 560px;
     h1 {
       font-size: 56px;
+      font-weight: 400;
       display: inline-block;
       strong {
         font-size: 30px;
@@ -735,6 +718,10 @@ table {
   h2 {
     font-family: $font;
   }
+  .form-group--btn {
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
 }
 
 .form-screen__book img {
@@ -761,12 +748,18 @@ table {
     font-size: 30px;
   }
   p {
+    margin-bottom: 25px;
     font-size: 14px;
     padding: 0 10px 10px;
     border-bottom: 1px solid #dce2e8;
+    @media #{$media_sm} {
+      padding-left: 0;
+      padding-right: 0;
+      font-size: 14px !important;
+    }
   }
-  form {
-    padding-top: 20px;
+  @media #{$media_sm} {
+    padding: 20px 10px;
   }
 }
 
@@ -953,6 +946,9 @@ table {
     padding-left: 17px;
     a{
       color: #81b1f2;
+    }
+    &.contacts__soc {
+      padding-left: 0;
     }
   }
   img {
@@ -1264,6 +1260,12 @@ table {
       width: 80px;
     }
   }
+  .btn__school_club-fee {
+    width: auto;
+    max-width: 280px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 @media only screen and (max-width: 520px) {
@@ -1284,9 +1286,6 @@ table {
 }
 
 @media only screen and (max-width: 475px) {
-  .form-screen__form {
-    padding: 40px 0;
-  }
   .form-screen__form_text {
     width: 270px;
   }
@@ -1299,7 +1298,7 @@ table {
       right: -415px;
     }
     .content {
-      padding-left: 10px;
+      padding-left: 0;
       h1 {
         font-size: 24px;
       }
