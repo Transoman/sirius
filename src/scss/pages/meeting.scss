@@ -87,6 +87,9 @@ body.meeting {
       padding-bottom: 168px;
       background: url('../img/meeting_title-bg.png') no-repeat center center;
       background-size: cover;
+      @media #{$media_sm} {
+        background-image: url('../img/meeting-bg-mobile.jpg');
+      }
       h1 {
         color: #fff;
         font-size: 64px;
@@ -404,6 +407,10 @@ body.meeting {
         max-width: 600px;
         @media #{$media_lg} {
           max-width: none;
+          margin-bottom: 50px;
+        }
+        @media #{$media_sm} {
+          margin-bottom: 25px;
         }
       }
       .statistic {
@@ -412,14 +419,20 @@ body.meeting {
         top: 25px;
         color: #5d6770;
         text-transform: uppercase;
-        height: 90px;
+        display: flex;
+        align-items: center;
         img {
-          float: left;
+          margin-right: 10px;
+          @media #{$media_sm} {
+            width: 64px;
+            height: 64px;
+            margin-right: 20px;
+          }
         }
         span {
-          float: left;
-          margin-top: 10px;
-          margin-left: 10px;
+          @media #{$media_sm} {
+            font-size: 13px;
+          }
         }
          @media #{$media_xl} {
           right: 15px;
@@ -428,6 +441,8 @@ body.meeting {
           position: static;
           right: auto;
           top: auto;
+          justify-content: center;
+          margin-bottom: 40px;
          }
       }
       &-list {
@@ -482,20 +497,30 @@ body.meeting {
           }
         }
       }
+      @media #{$media_sm} {
+        padding-top: 40px;
+      }
     }
     
     &__result {
       h2 {
         color: white;
+        @media #{$media_sm} {
+          margin-bottom: 30px;
+        }
       }
       padding-top: 120px;
       background-size: cover;
-      background: #0e64ed url('../img/result-bg.png') no-repeat;
+      background: #0e64ed url('../img/result-bg.png') no-repeat center / cover;
       color: white;
       font-family: $font_secondary;
       font-size: 20px;
       font-weight: 400;
       line-height: 30px;
+      @media #{$media_sm} {
+        padding-top: 40px;
+        padding-bottom: 20px;
+      }
     }
     &__organization {
       @include gradient-y(#eff8ff, white, 80%);
@@ -505,6 +530,12 @@ body.meeting {
       }
       h2 {
         margin-bottom: 80px;
+        @media #{$media_sm} {
+          margin-bottom: 30px;
+          br {
+            display: none;
+          }
+        }
       }
       &-slider {
         .slick-arrow {
@@ -518,6 +549,7 @@ body.meeting {
           text-align: center;
           top: calc(50% - 30px);
           z-index: 100;
+          box-shadow: 0 10px 20px rgba(#000, 0.1);
           &::before {
             display: inline;
             color: #0e61e6;
@@ -525,9 +557,20 @@ body.meeting {
             font-size: 18px;
             font-weight: 400;
             line-height: 60px;
+            @media #{$media_sm} {
+              font-size: 11px;
+              line-height: 36px;
+            }
           }
           &:focus {
             outline: none;
+          }
+          @media #{$media_md} {
+            top: 115px;
+          }
+          @media #{$media_sm} {
+            width: 36px;
+            height: 36px;
           }
         }
         .slick-prev {
@@ -544,32 +587,63 @@ body.meeting {
         }
       }
       &-slide {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
         &:active,
         &:focus {
           outline: none;
         }
         img {
-          float: left;
+          margin-right: 100px;
           &:active,
           &:focus {
             outline: none;
           }
+          @media #{$media_xl} {
+            width: 400px;
+            margin-right: 40px;
+          }
+          @media #{$media_lg} {
+            width: 220px;
+          }
+          @media #{$media_md} {
+            margin: 0 auto 35px;
+          }
         }
         div {
-          display: inline-block;
-          margin-top: 73px;
-          width: 445px;
-          float: right;
-          margin-right: 100px;
+          margin-top: 75px;
+          padding-right: 100px;
+          @media #{$media_xl} {
+            margin-top: 0;
+            padding-right: 70px;
+          }
+          @media #{$media_md} {
+            padding-right: 0;
+          }
         }
         h4 {
           color: #303c47;
           font-size: 42px;
+          @media #{$media_lg} {
+            font-size: 32px;
+          }
+          @media #{$media_sm} {
+            font-size: 22px;
+            font-weight: 500;
+          }
         }
         p {
           margin-bottom: 50px;
           color: #5d6770;
           font-size: 18px;
+          @media #{$media_lg} {
+            font-size: 16px;
+          }
+          @media #{$media_sm} {
+            margin-bottom: 35px;
+            font-size: 13px;
+          }
         }
         ul {
           list-style: none;
@@ -594,7 +668,13 @@ body.meeting {
               border-radius: 50%;
               display: inline-block;
             }
+            @media #{$media_lg} {
+              font-size: 16px;
+            }
           }
+        }
+        @media #{$media_md} {
+          flex-direction: column;
         }
       }
       &-counter {
@@ -625,21 +705,35 @@ body.meeting {
           height: 2px;
           background-color: #0e64ed;
         }
+        @media #{$media_sm} {
+          display: none;
+        }
+      }
+      @media #{$media_sm} {
+        padding-top: 40px;
+        padding-bottom: 40px;
       }
     }
     &__participation {
-      margin-bottom: 120px;
+      padding-bottom: 120px;
       img {
         width: 100%;
         max-width: 500px;
       }
       h2 {
         font-size: 52px;
-        margin-bottom: 5px;
+        margin-bottom: 45px;
         strong {
           span {
             color: #0e64ed;
           }
+        }
+        @media #{$media_xl} {
+          font-size: 42px;
+          margin-bottom: 25px;
+        }
+        @media #{$media_sm} {
+          font-size: 24px;
         }
       }
       blockquote {
@@ -648,13 +742,25 @@ body.meeting {
         font-size: 26px;
         font-style: italic;
         font-weight: 300;
-        line-height: 48.15px;
+        line-height: 1.8;
         position: relative;
+        @media #{$media_sm} {
+          font-size: 16px;
+        }
       }
       a.btn {
         display: block;
-
         margin: 130px auto 0;
+        @media #{$media_xl} {
+          margin-top: 90px;
+        }
+        @media #{$media_sm} {
+          margin-top: 30px;
+          line-height: 60px;
+        }
+      }
+      @media #{$media_sm} {
+        padding-bottom: 40px;
       }
     }
   }
@@ -778,13 +884,62 @@ body.meeting {
       position: absolute;
       left: 0;
       top: 0;
+      @media #{$media_md} {
+        width: 60px;
+        left: 10px;
+      }
     }
+    p {
+      @media #{$media_sm} {
+        font-size: 17px;
+      }
+    }
+    .btn {
+      padding: 22px 20px;
+      line-height: 1 !important;
+      @media #{$media_md} {
+        display: block !important;
+        max-width: 260px !important;
+        margin: 0 auto;
+      }
+    }
+    @media #{$media_md} {
+      padding-top: 0;
+      padding-left: 90px;
+    }
+     @media #{$media_sm} {
+        margin-bottom: 40px;
+      }
+      &--btn {
+        @media #{$media_md} {
+          padding-left: 0;
+        }
+      }
   }
 }
 
 .participation {
   &__img-wrap {
-    position: relative;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    &::before {
+      content: '';
+      position: absolute;
+      left: -30px;
+      top: 30px;
+      width: 100%;
+      height: 100%;
+      background-color: #ecf8ff;
+      -webkit-border-radius: 16px;
+      border-radius: 16px;
+      z-index: -1;
+      @media #{$media_sm} {
+        left: -10px;
+        top: 10px;
+      }
+    }
     &::after {
       content: '';
       display: block;
@@ -793,11 +948,43 @@ body.meeting {
       right: -20px;
       width: 70px;
       height: 55px;
-      background: url('../img/blockquote.png')no-repeat center;
+      background: url('../img/blockquote.png') no-repeat center;
+      @media #{$media_xl} {
+        bottom: 40px;
+      }
+      @media #{$media_lg} {
+        left: 20px;
+        right: auto;
+        bottom: -20px;
+      }
+    }
+    img {
+      border-radius: 16px;
+      display: block;
+    }
+    @media #{$media_xl} {
+      width: 350px;
+    }
+    @media #{$media_lg} {
+      position: relative;
+      top: auto;
+      left: auto;
+      margin: 0 auto 45px;
+    }
+    @media #{$media_sm} {
+      max-width: 280px;
+      width: auto;
     }
   }
   &__content {
-    padding-left: 20px;
+    position: relative;
+    padding-left: 520px;
+    @media #{$media_xl} {
+      padding-left: 400px;
+    }
+    @media #{$media_lg} {
+      padding-left: 0;
+    }
   }
 }
 
@@ -806,6 +993,12 @@ body.meeting {
   padding-bottom: 110px;
   h2 {
     margin-bottom: 70px;
+    @media #{$media_sm} {
+      margin-bottom: 30px;
+      br {
+        display: none;
+      }
+    }
   }
   &__content {
     img {
@@ -817,11 +1010,25 @@ body.meeting {
       font-size: 42px;
       font-weight: 700;
       color: $pickled-bluewood;
+      @media #{$media_xl} {
+        font-size: 32px;
+      }
+      @media #{$media_sm} {
+        margin-bottom: 10px;
+        font-size: 18px;
+      }
     }
     p {
       font-family: $font;
       font-size: 24px;
       color: $shuttle-gray;
+      @media #{$media_xl} {
+        font-size: 22px;
+      }
+      @media #{$media_sm} {
+        margin-bottom: 20px;
+        font-size: 16px;
+      }
     }
   }
   &__img-wrap {
@@ -838,11 +1045,26 @@ body.meeting {
       background-color: $solitude;
       border-radius: 16px;
       z-index: -1;
+      @media #{$media_sm} {
+        bottom: auto;
+        height: 100%;
+        top: 10px;
+        right: -10px;
+      }
     }
     img {
       display: block;
+      width: 100%;
       border-radius: 16px;
     }
+    @media #{$media_sm} {
+      padding-top: 0;
+      max-width: 280px;
+      margin: 0 auto;
+    }
+  }
+  @media #{$media_sm} {
+    padding-bottom: 80px;
   }
 }
 
@@ -850,6 +1072,24 @@ body.meeting {
   &--meeting {
     h2 {
       margin-bottom: 105px;
+      br {
+        display: none;
+        @media #{$media_lg} {
+          display: block;
+        }
+      }
+      @media #{$media_lg} {
+        margin-bottom: 60px;
+      }
+      @media #{$media_sm} {
+        margin-bottom: 20px;
+      }
+    }
+    .form-screen__book {
+       @media #{$media_lg} {
+        max-width: 500px;
+        margin: 0 auto;
+       }
     }
     .form-screen__form {
       h4 {
@@ -859,9 +1099,16 @@ body.meeting {
       }
       p {
         position: relative;
+        display: inline-block;
         &:hover .drop-content {
           display: block;
         }
+        @media #{$media_sm} {
+          margin-bottom: 0;
+        }
+      }
+      @media #{$media_sm} {
+        padding: 20px 10px;
       }
     }
     .form__field {
@@ -930,7 +1177,7 @@ body.meeting {
   div {
     text-align: center;
     img {
-      display: inline-block;
+      display: block;
     }
   }
   .slick-slide:not(.slick-current) {
@@ -940,9 +1187,8 @@ body.meeting {
     }
     img {
       transition: all 0.5s;
-      width: 515px;
       opacity: 0.3;
-      margin-top: 40px;
+      transform: scale(0.8)
     }
   }
   .slick-current {
@@ -951,10 +1197,10 @@ body.meeting {
       outline: none;
     }
     img {
-      width: 100%;
       border-radius: 17px;
       box-shadow: 0 0 10px 2px #b7b5b5;
       transition: all 0.5s;
+      transform: scale(1);
       &:active,
       &:focus {
         outline: none;
@@ -980,7 +1226,8 @@ body.meeting {
     background-color: white;
     position: absolute;
     text-align: center;
-    top: calc(50% - 30px);
+    top: 50%;
+    transform: translateY(-50%);
     z-index: 100;
     &::before {
       display: inline;
@@ -989,9 +1236,17 @@ body.meeting {
       font-size: 18px;
       font-weight: 400;
       line-height: 60px;
+      @media #{$media_sm} {
+        font-size: 11px;
+        line-height: 32px;
+      }
     }
     &:focus {
       outline: none;
+    }
+    @media #{$media_sm} {
+      width: 32px;
+      height: 32px;
     }
   }
   .slick-prev {
@@ -1006,17 +1261,20 @@ body.meeting {
       content: '\f054';
     }
   }
+  @media #{$media_sm} {
+    margin-bottom: 30px;
+  }
 }
 
 .group-previous {
   text-align: center;
   padding-bottom: 120px;
   padding-top: 115px;
-  .btn {
-    padding:0 38px;
-    line-height: 70px;
-    width: auto;
-    max-width: initial;
+  .btn__school_meeting {
+    @media #{$media_sm} {
+      height: auto;
+      padding: 6px 0;
+    }
   }
   h2{
     font-size: 60px;
@@ -1029,6 +1287,12 @@ body.meeting {
     strong{
       font-weight: bold;
     }
+    @media #{$media_sm} {
+      margin-bottom: 30px;
+    }
+  }
+  @media #{$media_sm} {
+    padding-top: 80px;
   }
 }
 .partners {
@@ -1044,6 +1308,19 @@ body.meeting {
     strong {
       font-family: $font;
       font-weight: 700;
+    }
+  }
+}
+
+.contacts {
+  &__info {
+    p {
+      a {
+        color: #fff;
+        &:hover {
+          color: $orange;
+        }
+      }
     }
   }
 }

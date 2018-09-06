@@ -309,7 +309,7 @@ main.content {
       text-decoration: underline;
     }
     @media #{$media_sm} {
-      padding: 15px 0;
+      padding: 20px 0;
     }
   }
   .footer__meet {
@@ -331,11 +331,11 @@ main.content {
   p {
     margin-bottom: 0;
   }
-  @media #{$media_md} {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-  }
+  // @media #{$media_md} {
+  //   position: absolute;
+  //   width: 100%;
+  //   bottom: 0;
+  // }
   @media #{$media_sm} {
     border-top:1px solid #9da7b0;
     p {
@@ -352,6 +352,7 @@ main.content {
 @import "blocks/founders";
 @import "blocks/sirius-about";
 @import "blocks/indicator";
+@import "blocks/social-list";
 
 @import 'blocks/new-approach-club';
 @import "pages/club-footer";
