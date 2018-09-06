@@ -1239,6 +1239,7 @@ table {
       font-size: 20px;
       line-height: 24px;
       width: 190px;
+      letter-spacing: 0.06em;
     }
     font-size: 36px;
     line-height: 96px;
@@ -1378,7 +1379,9 @@ table {
           width: 50px;
         }
         &:before {
-          top: 10px;
+          top: 50%;
+          transform: translateY(-50%);
+
         }
       }
       .slide:before {
@@ -1395,6 +1398,12 @@ table {
   }
   .course-fee__block h4{
     font-size: 20px;
+  }
+  .contacts .bg-gradient{
+    height: 400px;
+  }
+  .contacts__item h4{
+    margin-bottom: 0;
   }
 }
 
