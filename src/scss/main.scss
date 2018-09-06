@@ -332,7 +332,7 @@ main.content {
     margin-bottom: 0;
   }
   @media #{$media_md} {
-    position: absolute;
+    position: relative;
     width: 100%;
     bottom: 0;
   }

@@ -93,33 +93,33 @@
         <h2>
           <strong>ОСНОВАТЕЛИ клуба</strong> КРИПТОмиллионеров</h2>
         <div class="row d-flex justify-content-between">
-          <div class="col-lg-5">
-            <img src="img/founder-1.png" alt="">
-            <h3>Вадим Киреев</h3>
-            <p> Главный аналитик фонда Sirius Crypto
-              <br> Эксперт школы трейдинга </p>
-            <div class="founders-school__social">
-              <a href="#">
-                <img src="img/instagram.svg" alt=""> </a>
-              <a href="#">
-                <img src="img/facebook-logo.svg" alt=""> </a>
-              <a href="#">
-                <img src="img/telegram.svg" alt=""> </a>
-            </div>
+          <div class="col-md-5">
+              <img src="img/founder-1.png" alt="">
+              <h3>Вадим Киреев</h3>
+              <p> Главный аналитик фонда Sirius Crypto
+                <br> Эксперт школы трейдинга </p>
+              <div class="founders-school__social">
+                <a href="#">
+                  <img src="img/instagram.svg" alt=""> </a>
+                <a href="#">
+                  <img src="img/facebook-logo.svg" alt=""> </a>
+                <a href="#">
+                  <img src="img/telegram.svg" alt=""> </a>
+              </div>
           </div>
-          <div class="col-lg-5">
-            <img src="img/founder-2.png" alt="">
-            <h3>Арсений Архангельский</h3>
-            <p> Соучредитель клуба и школы крипто-трейдинга
-              <br> Sirius Crypto </p>
-            <div class="founders-school__social">
-              <a href="#">
-                <img src="img/instagram.svg" alt=""> </a>
-              <a href="#">
-                <img src="img/facebook-logo.svg" alt=""> </a>
-              <a href="#">
-                <img src="img/telegram.svg" alt=""> </a>
-            </div>
+          <div class="col-md-5">
+              <img src="img/founder-2.png" alt="">
+              <h3>Арсений Архангельский</h3>
+              <p> Соучредитель клуба и школы крипто-трейдинга
+                <br> Sirius Crypto </p>
+              <div class="founders-school__social">
+                <a href="#">
+                  <img src="img/instagram.svg" alt=""> </a>
+                <a href="#">
+                  <img src="img/facebook-logo.svg" alt=""> </a>
+                <a href="#">
+                  <img src="img/telegram.svg" alt=""> </a>
+              </div>
           </div>
         </div>
       </div>
@@ -393,16 +393,25 @@
             <div class="form-screen__form">
               <h4>Оставить заявку на обучение</h4>
               <p>Старт потока 27 октября - 17 ноября,<br> 11:00 - 18:00</p>
-              <form action="" method="post">
-                <input type="text" placeholder="Ваше имя" class="form-screen__form_text">
-                <input type="tel" placeholder="Ваш телефон" class="form-screen__form_text">
-                <div class="btn__school btn__school_form">
-                  <a class="callback_open" href="#">Я приду!</a>
+              <form action="" method="post" class="form meeting-form" novalidate="novalidate">
+                <input type="hidden" name="subject" value="Заявка на встречу криптоклуба в Москве">
+                <input type="hidden" name="time" value="11:00 - 18:00">
+                <div class="form-group">
+                  <input type="text" name="name" placeholder="Ваше имя" class="form__field error" required="" aria-invalid="true"><label id="name-error" class="error" for="name">Введите Ваше имя</label>
                 </div>
-                <label>
-                  <input type="checkbox"> Нажимая на кнопку "Я приду", я даю согласие на обработку персональных данных
-                  <a href="#">политикой конфиденциальности</a>
-                </label>
+                <div class="form-group">
+                  <input type="tel" name="phone" placeholder="Ваш телефон" class="form__field error" required="" maxlength="18"><label id="phone-error" class="error" for="phone">Введите Ваш телефон</label>
+                </div>
+                <div class="form-group form-group--btn">
+                  <input type="submit" value="Я приду!" class="form__btn indicator-btn">
+                </div>
+                <div class="form-group">
+                  <label>
+                    <input type="checkbox" name="term" required="" class="error"><label id="term-error" class="error" for="term">Нужно Ваше согласие</label> Нажимая на кнопку "Я приду", я даю согласие на обработку персональных данных
+                    <a href="#">политикой конфиденциальности</a>
+                  </label>
+                </div>
+
               </form>
             </div>
           </div>
